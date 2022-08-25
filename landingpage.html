@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            font-family: sans-serif;
+            color: #525257;
+        }
         #navbar {
          
             height: 100px;
@@ -29,9 +33,9 @@ display: flex;
             height: auto;
         }#lef_tsite{
             width: 25%;
-            height:700px ;
+            height:900px ;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-            background-color: rgba(167, 167, 167, 0.234);
+            background-color:rgba(77, 76, 76, 0.085);
         }.explor{
          text-decoration: underline;
          border: none;
@@ -53,7 +57,7 @@ height: 100%;
             margin-left: 5%;
         }#rightsite{
             width: 80%;
-            height: 700px;
+            height: 900px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
        background-color: white;
        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -80,6 +84,8 @@ height: 100%;
             font-size: 20px;
         }#left_container2{
            display: none;
+        }.pages>p{
+            margin-top: -10px;
         }
       .round{
        
@@ -96,7 +102,8 @@ height: 100%;
        border-bottom:2px solid rgba(0, 0, 0, 0.215);
       gap: 10%;
       height: 120px;
-      
+    
+      margin: auto;
       
       }#page1nav>img{
         -webkit-text-size-adjust: 100%;
@@ -108,6 +115,86 @@ height: 100%;
         font-family: sans-serif;
         margin-top: 5%;
       }
+      #land_account{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        margin-top: 50px;
+      
+}.itemicon{
+    color: #2babad;
+    
+    
+   
+}.itemicon+p{
+font-size: 20px;
+
+margin-top: -20px;
+margin-left: 20px;
+}
+
+#box_bench{
+    box-shadow: 0 0 2px rgb(28 28 28 / 10%), 0 4px 6px rgb(28 28 28 / 4%), 0 8px 16px rgb(28 28 28 / 4%), 0 10px 20px 2px rgb(28 28 28 / 2%);
+    color: #525257!important;
+    display: block;
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #7272766a;
+    border-radius: 2%;
+}#page1_container{
+  display: grid;
+  width: 100%;
+  height: 90%;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+ 
+}.box1a>p{
+    line-height:25px ;
+    margin-bottom: 40px;
+}#box1a_but1{
+    background-color: #005961;
+    border-color: #005961;
+    width: 50%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}#box1a_but2{
+    border: none;
+    background-color:white;
+    color:#005961 ;
+    border-bottom:2px solid #666666c5 ;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+   
+}#box_bench{
+    padding: 20px;
+    
+}#bench_icone2{
+    width: 20px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: -45px;
+
+   
+}#bench_icone2+h4{
+    margin-left: 30px;
+}#bench_cont{
+    border: none;
+    background: none;
+    color: #0a8080;
+    border-bottom: 2px solid  #0a8080;
+    font-size: 16px;
+    font-family:sans-serif ;
+
+}
+      
     </style>
 </head>
 <body>
@@ -132,8 +219,8 @@ height: 100%;
             <div id="left_allpage">
                
         <div class="pages">
-            <svg aria-hidden="true" class="round" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 10.086L4.207 7.793a1 1 0 00-1.414 1.414l2.823 2.823a1.25 1.25 0 001.768 0l6.323-6.323a1 1 0 00-1.414-1.414L6.5 10.086z"></path></svg> 1. Company's addresses  
-            
+            <svg aria-hidden="true" class="round" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 10.086L4.207 7.793a1 1 0 00-1.414 1.414l2.823 2.823a1.25 1.25 0 001.768 0l6.323-6.323a1 1 0 00-1.414-1.414L6.5 10.086z"></path></svg><P></P>  
+            <p>Company's address</p>
         </div>
         <div class="pages"> 
             
@@ -151,13 +238,16 @@ height: 100%;
             <div class="round1"></div> <p> 9.verify bank account</p></div>
         <div class="pages"> 
            
-            <div class="round1"></div> <p>10.verify bank account</p></div>
+            <div class="round1"></div> <p>10.Workers' comp</p></div>
         <div class="pages"> 
-            <div class="round1"></div> 11.R&D tax credit</div>
+            <div class="round1"></div> <p>11.R&D tex credit</p></div>
         <div class="pages">
             <div class="round1"></div>
-            12.Discover Apps</div>
-        <div class="pages"> </div>
+               <p>12.Discover</p></div>
+        <div class="pages">
+            <div class="round1"></div>
+            <p>13. Choose a plan</p>
+         </div>
 </div>
 </div>
 <div id="left_container2">
@@ -192,12 +282,57 @@ height: 100%;
     </div>
 
 </div>
+
     </div><div id="rightsite">
-<div id="page1nav">
-    <img src=" https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/illustrations/illo-handshake-5ec4a501.svg" alt="">
-    <h1>Add your accountant or bookkeeper</h1>
+        <div id="land_account">
+            <div id="page1nav">
+                <img src=" https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/illustrations/illo-handshake-5ec4a501.svg" alt="">
+                <h1>Add your accountant or bookkeeper</h1>
+            </div>
+
+            <div id="page1_container">
+                <div id="box1" >
+<h4> Why do we need to ask for this?</h4>
+<div class="box1a">
+   <p> Add your accountant or bookkeeper so they can access important information, set up your accounting integration,
+     and help you run payroll. We’ll add them as an admin on your Gusto account—you can always edit who has access
+      to your account once you finish onboarding.
+    </p>
+      <button id="box1a_but1">Add your acoount</button>
+      <br>
+      <button id="box1a_but2">
+    Skip this step
+      </button>
 </div>
+                </div>
+                <div id="box2">
+<h4>What to have ready:</h4>
+
+<div class="itemicon">✓</div>
+<p>
+    Your accountant’s name
+</p>
+<div class="itemicon">✓</div>
+<p>
+    Your accountant’s email
+</p>
+<h4>Need a bookkeeper? We can help.</h4>
+<div id="box_bench">
+<img src=" https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/images/logos/logo-partners/partner-logo-bench-19f3dff550b85efd1d3e66ccd6942401.svg" alt="">
+<br>
+<img id="bench_icone2" src="https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/images/badges/badge-gold-ddd0cf73cf975b8671af8054d2c3d1f7.svg" alt="">
+<h4>Gusto Gold Partner</h4>
+<p> As a gusto member,you get 20% off your first 6 monts of bookkeeping with bench </p>
+
+<button id="bench_cont"> Connect with Bench ></button>
+</div>
+</div>
+            
+</div>
+        
     </div>
+
+</div>
 </div>
     </body>
 </html>
