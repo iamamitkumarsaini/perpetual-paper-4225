@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="Webkit Clearfacebold Fonts/stylesheet.css">
+    <link rel="stylesheet" href="webfontkit GCentra/stylesheet.css">
+    <style>
+        #shiv_navbar {
+            width: 100%;
+            height: 75px;
+            margin: 0px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        }
+
+        #shiv_navbar>img {
+            margin: 20px;
+            width: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: clearfacebold;
+            color: #222525;
+            font-size: 28px;
+        }
+
+        p {
+            text-align: center;
+            font-family: centra_no2book;
+            color: #222525;
+            font-size: 17px;
+            margin: 25px;
+        }
+
+        #shiv_container1,
+        #shiv_container2,
+        #shiv_container3,
+        #shiv_container4,
+        #shiv_container5,
+        #shiv_container6,
+        #shiv_container7 {
+            width: 35%;
+            margin: auto;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 30px;
+        }
+
+        #shiv_container2,
+        #shiv_container3,
+        #shiv_container4,
+        #shiv_container5,
+        #shiv_container6,
+        #shiv_container7,
+        #shiv_container8 {
+            display: none;
+        }
+
+        button {
+            width: 97%;
+            padding: 20px;
+            margin: 8px;
+            border-radius: 5px;
+            color: white;
+            background-color: teal;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(16, 150, 150);
+        }
+
+        #abc {
+            font-size: 15px;
+            margin: 20px;
+        }
+
+        #shiv_header {
+            width: 35%;
+            margin: auto;
+            line-height: 20px;
+            padding: 30px;
+        }
+
+        span>a {
+            color: teal;
+        }
+
+        span {
+            color: teal;
+            font-family: centra_no2book;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #bo,
+        #bn {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #shiv_container8 {
+            width: 33%;
+            margin: auto;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 30px;
+            line-height: 20px;
+        }
+
+        #shiv_container8>button {
+            width: 97%;
+            padding: 15px;
+            margin: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #shiv_container8>button:nth-child(2) {
+            color: #222525;
+            background-color: whitesmoke;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #shiv_container8>button:nth-child(2):hover {
+            color: teal;
+            background-color: rgb(220, 217, 217);
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #shiv_container8>button>img {
+            width: 5%;
+            margin-right: 5px;
+        }
+
+        #shiv_name,
+        #shiv_email,
+        #shiv_company,
+        #shiv_password,
+        #shiv_cpassword {
+            width: 90%;
+            padding: 16px;
+            margin: 7px;
+            border: 0.5px solid rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+
+        #shiv_employees,
+        #shiv_phone {
+            width: 38%;
+            padding: 16px;
+            margin: 7px;
+            border: 0.5px solid rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+
+        ul {
+            font-family: centra_no2book;
+            color: #4f5151;
+        }
+
+        #pr {
+            font-family: centra_no2book;
+            color: #4f5151;
+            margin: 30px 0px -10px 10px;
+        }
+
+        #tandm {
+            font-size: smaller;
+            color: #4f5151;
+        }
+
+        a {
+            color: teal;
+        }
+
+        #shiv_submit {
+            color: white;
+            background-color: #ef523c;
+        }
+
+        #shiv_submit:hover {
+            color: white;
+            background-color: #f45d48;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="shiv_navbar">
+        <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg"
+            alt="image">
+    </div>
+    <div id="shiv_header">
+        <h1>Get started with Gusto</h1>
+        <p>We offer one intuitive place to manage payroll,
+            benefits, and HR for your business.</p>
+    </div>
+    <div id="shiv_container1">
+        <p>Tell us a little about your business.</p>
+        <h1>How many employees do you have, including yourself?</h1>
+        <p>We support growing businesses at any stage.</p>
+        <button onclick="shiv_btn1()">0-2 employees</button>
+        <button onclick="shiv_btn1()">3-9 employees</button>
+        <button onclick="shiv_btn1()">10-24 employees</button>
+        <button onclick="shiv_btn1()">25-99 employees</button>
+        <button onclick="shiv_btn1()">100+ employees</button>
+    </div>
+    <div id="shiv_container2">
+        <p>Just a few more questions.</p>
+        <h1>Have you run payroll yet this calendar year?</h1>
+        <button onclick="shiv_btn2()">Yes</button>
+        <button onclick="shiv_btn2()">No</button>
+        <br>
+        <br>
+        <span onclick="shiv_back_btn2()">Back</span>
+    </div>
+    <div id="shiv_container3">
+        <p>Just a few more questions.</p>
+        <h1>How do you currently run payroll?</h1>
+        <button onclick="shiv_btn3()">We’re new to running payroll</button>
+        <button onclick="shiv_btn3()">We use another online payroll software</button>
+        <button onclick="shiv_btn3()">We do it ourselves manually</button>
+        <br>
+        <br>
+        <span onclick="shiv_back_btn3()"">Back</span>
+    </div>
+    <div id="shiv_container4">
+            <p>Just a few more questions.</p>
+            <h1>How would you describe your business setting?</h1>
+            <button onclick="shiv_btn4()">We work in an office</button>
+            <button onclick="shiv_btn4()">We work in retail or food service</button>
+            <button onclick="shiv_btn4()">We work in a factory, construction, or in the field</button>
+            <br>
+            <br>
+            <div id="bo">
+                <span onclick="shiv_back_btn4()">Back</span>
+                <span id="other" onclick="shiv_other_btn4()">Other</span>
+            </div>
+    </div>
+    <div id="shiv_container5">
+        <p>Just a few more questions.</p>
+        <h1>What type of workers do you need to pay?</h1>
+        <button onclick="shiv_btn5()">Employees (W-2s)</button>
+        <button onclick="shiv_btn5()">Contractors (1099s)</button>
+        <button onclick="shiv_btn5()">Both (W-2s & 1099s)</button>
+        <br>
+        <br>
+        <div id="bn">
+            <span onclick="shiv_back_btn5()">Back</span>
+            <span onclick="shiv_notsure_btn5()">I'm not sure yet</span>
+        </div>
+    </div>
+    <div id="shiv_container6">
+        <p>Just a few more questions.</p>
+        <h1>Interested in offering health benefits to your team?</h1>
+        <button onclick="shiv_btn6()">Yes</button>
+        <button onclick="shiv_btn6()">No</button>
+        <br>
+        <br>
+        <span onclick="shiv_back_btn6()">Back</span>
+    </div>
+    <div id="shiv_container7">
+        <p>One last question.</p>
+        <h1>Ready to set up your company?</h1>
+        <button onclick="shiv_btn7()">Yes, I’m ready!</button>
+        <button onclick="shiv_btn7()">No, I’d like to learn more.</button>
+        <br>
+        <br>
+        <span onclick="shiv_back_btn7()">Back</span>
+    </div>
+    <div id="shiv_container8">
+        <p><b>Nice!</b> We could be a great fit for your business.</p>
+        <button> <img src="https://prod.gusto-assets.com/assets/packs/media/icons/partner-logo-google-cd0f2b38.svg"
+                alt="Google"><b>Sign up with Google</b></button>
+        <p>or</p>
+        <input type="text" id="shiv_name" placeholder="Full name">
+        <input type="email" id="shiv_email" placeholder="Work email address">
+        <input type="text" id="shiv_company" placeholder="Company name">
+        <input type="number" id="shiv_employees" placeholder="No. of employees">
+        <input type="number" id="shiv_phone" placeholder="Company phone">
+        <input type="password" id="shiv_password" placeholder="Set password">
+        <div id="pr">Password strength:</div>
+        <ul>
+            <li>Use 8 or more characters.</li>
+            <li>Use a minimum of one letter.</li>
+            <li>Use a minimum of one number.</li>
+        </ul>
+        <input type="password" id="shiv_cpassword" placeholder="Confirm password" required>
+        <button id="shiv_submit"><b>Get started</b></button>
+        <p>Already use Gusto?<span><a href="">Sign in here.</a></span></p>
+        <p id="tandm">By creating an account, you agree to the <a href="">terms & conditions</a>, the <a href="">payroll
+                terms</a>, and our <a href="">privacy policy</a>.</p>
+    </div>
+    <p id="abc">No credit card required · Secure site</p>
+    <p>Does your company use Gusto today? <span><a href="">Sign in here</a></span></p>
+</body>
+
+</html>
+<script>
+    function shiv_btn1() {
+        document.getElementById("shiv_container1").style.display = "none";
+        document.getElementById("shiv_container2").style.display = "block";
+    }
+
+    function shiv_btn2() {
+        document.getElementById("shiv_container2").style.display = "none";
+        document.getElementById("shiv_container3").style.display = "block";
+    }
+
+    function shiv_btn3() {
+        document.getElementById("shiv_container3").style.display = "none";
+        document.getElementById("shiv_container4").style.display = "block";
+    }
+
+    function shiv_btn4() {
+        document.getElementById("shiv_container4").style.display = "none";
+        document.getElementById("shiv_container5").style.display = "block";
+    }
+
+    function shiv_btn5() {
+        document.getElementById("shiv_container5").style.display = "none";
+        document.getElementById("shiv_container6").style.display = "block";
+    }
+
+    function shiv_btn6() {
+        document.getElementById("shiv_container6").style.display = "none";
+        document.getElementById("shiv_container7").style.display = "block";
+    }
+
+    function shiv_btn7() {
+        document.getElementById("shiv_container7").style.display = "none";
+        document.getElementById("shiv_container8").style.display = "block";
+    }
+
+
+
+
+    function shiv_back_btn2() {
+        document.getElementById("shiv_container2").style.display = "none";
+        document.getElementById("shiv_container1").style.display = "block";
+    }
+
+    function shiv_back_btn3() {
+        document.getElementById("shiv_container3").style.display = "none";
+        document.getElementById("shiv_container2").style.display = "block";
+    }
+
+    function shiv_back_btn4() {
+        document.getElementById("shiv_container4").style.display = "none";
+        document.getElementById("shiv_container3").style.display = "block";
+    }
+
+    function shiv_back_btn5() {
+        document.getElementById("shiv_container5").style.display = "none";
+        document.getElementById("shiv_container4").style.display = "block";
+    }
+
+    function shiv_back_btn6() {
+        document.getElementById("shiv_container6").style.display = "none";
+        document.getElementById("shiv_container5").style.display = "block";
+    }
+
+    function shiv_back_btn7() {
+        document.getElementById("shiv_container7").style.display = "none";
+        document.getElementById("shiv_container5").style.display = "block";
+    }
+
+
+
+
+    function shiv_other_btn4() {
+        document.getElementById("shiv_container4").style.display = "none";
+        document.getElementById("shiv_container5").style.display = "block";
+    }
+
+    function shiv_notsure_btn5() {
+        document.getElementById("shiv_container5").style.display = "none";
+        document.getElementById("shiv_container6").style.display = "block";
+    }
+
+
+    let userDataArr = [];
+    document.getElementById("shiv_submit").addEventListener("click", function userData() {
+        let userDataObj = {
+            name: document.getElementById("shiv_name").value,
+            email: document.getElementById("shiv_email").value,
+            company: document.getElementById("shiv_company").value,
+            employessCount: document.getElementById("shiv_employees").value,
+            phoneNo: document.getElementById("shiv_phone").value,
+            password: document.getElementById("shiv_password").value,
+            cpassword: document.getElementById("shiv_cpassword").value
+        }
+
+
+
+        let flag;
+        if (userDataObj.name = "") {
+            alert("Please fill the required input")
+            flag = false;
+        } else if (userDataObj.phoneNo.length < 10 || userDataObj.phoneNo.length > 10) {
+
+            flag = false;
+        } else if (userDataObj.password.length < 8) {
+            alert("Please enter atleast 8 charcter!")
+            flag = false;
+        } else if (userDataObj.password !== userDataObj.cpassword) {
+            alert("Password doesn't match!")
+            flag = false;
+        } else {
+            flag = true;
+        }
+        if (flag === true) {
+            userDataArr.push(userDataObj);
+            localStorage.setItem("userData", JSON.stringify(userDataArr));
+            window.location.href = "thankyouPage.html";
+        }
+
+    })
+</script>
