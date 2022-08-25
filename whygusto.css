@@ -1,0 +1,102 @@
+/* Upper portion */
+
+#upper_box{
+    display:flex;
+    /* border:1px solid red; */
+}
+#upper_box>#img1{
+    /* border:1px solid green; */
+    width:40%;
+    margin-top: 90px;
+    margin-right:90px;
+}
+#upper_box>#img1>img{
+    width:230%;
+    height:110%;
+}
+#upper_box>#box{
+    /* border:1px solid blue; */
+    text-align: center;
+    width:130%;
+}
+#upper_box>#box>#box1{
+    color:red;
+}
+#upper_box>#box>#box2{
+    font-size: 22px;
+}
+#upper_box>#box>#btn{
+    background-color: red;
+    border:1px solid red;
+    width:150px;
+    height:50px; 
+    border-radius: 10px;   
+}
+#upper_box>#box>#btn>a{
+    text-decoration: none;
+    color: white;
+}
+#upper_box>#img2{
+    /* border:1px solid green; */
+    width:40%;
+}
+#upper_box>#img2>img{
+    margin-top: 110px;
+    width:140%;
+    margin-left:-100px
+}
+
+/* Middle portion */
+#mid_box{
+    /* border:1px solid red; */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#mid_box>#mid_box1{
+   font-size:25px;
+}
+#mid_box>#mid_box2{
+    font-size: 19px;
+}
+#mid_box>#mid_box3{
+    /* border:1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#mid_box>#mid_box3>.box>img{
+    /* border:1px solid green; */
+    width:20%
+}
+#mid_box>#mid_box3>.box>div>a{
+    text-decoration: none;
+    color:black;
+    margin-top:10px;
+}
+#mid_box>#mid_box3>.box>div>a:hover{
+    text-decoration: underline;
+    color:teal;
+}
+
+/* middle Protion 2 */
+
+#container{
+    /* border:1px solid red; */
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(249, 229, 204);
+}
+#container>div>h1{
+    padding-top: 50px;
+    margin-top: 90px;
+}
+#container>button{
+    color:white;
+    background-color: red;
+    border:1px solid red;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px
+}
