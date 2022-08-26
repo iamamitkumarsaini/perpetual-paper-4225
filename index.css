@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=PT+Serif&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+
+}
+
+#navbar{
+
+      width: 100%;
+      padding: 0% 2.5% 0% 2.5%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      z-index: 2;
+      background-color: white;
+}
+
+/* #navbar-part{
+
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+    position: relative;
+
+
+} */
+
+#first-part{
+
+    display: flex;
+    width: 63%;
+    justify-content: space-between;
+
+}
+
+#logo-image{
+
+    width: 100px;
+    /* height: 45px; */
+    margin-top: 7px;
+
+}
+
+#why-gusto{
+
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+}
+
+#why-gusto:hover{
+
+    color: rgb(29, 165, 154);
+
+}
+
+#first-part h4{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+
+}
+
+#payroll{
+
+    display: flex;
+    height: 50px;
+    width: 160px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid red;
+    
+
+}
+
+#payroll-part{
+
+    display: none;
+    position: absolute;
+    height: 380px;
+    width: 550px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: 0;
+    top: 120%;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+
+}
+
+#payroll:hover #payroll-part{
+
+    display: block;
+    /* color: red; */
+
+}
+#payroll:hover #payroll-icon{
+
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+    /* color: red; */
+
+}
+
+#pricing{
+    display: block;
+}
+
+
+
+#pricing>a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pricing>a:hover{
+    color: rgb(29, 165, 154);
+
+}
+
+#accountant{
+
+    display: flex;
+    height: 50px;
+    width: 155px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#accountant-part{
+
+    display: none;
+    position: fixed;
+    height: 340px;
+    width: 500px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: 35%;
+    top: 11%;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+#built{
+
+    display: flex;
+    height: 50px;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#built-part{
+
+    display: none;
+    position: fixed;
+    height: 230px;
+    width: 280px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: 51%;
+    top: 11%;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+
+}
+
+#second-part{
+
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+
+}
+
+#search{
+
+    width: 80px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+
+
+#search-icon{
+
+    color: rgb(29, 165, 154);
+
+}
+
+#search-button{
+
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: none;
+    font-family: 'poppins';
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+#sign-in{
+
+    text-decoration: none;
+    color: black;
+    width: 80px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(253, 248, 241);
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+#sign-in:hover{
+
+    color: rgb(29, 165, 154);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+
+#create-account{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(242, 95, 95);
+    width: 160px;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+#create-account:hover{
+
+    background-color: rgb(247, 71, 71);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+
+
+/* ########################################## section-1 styling ###################################### */
+
+#section1{
+
+    width: 100%;
+    height: 142vh;
+    z-index: 1;
+    background-image: url('https://prod.gusto-assets.com/assets/homepage/hp-lemon-yellow-miami-745d69be5bfb0771505b993c2fa7da923b63bd8a684a0a3697533ba4aa72935c.jpg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 2.5% 0% 3.5%;
+    position: relative;
+    margin-bottom: 50px;
+
+
+
+}
+
+#section1-first-div{
+
+    border-radius: 5px;
+    background-color: white;
+    padding: 3.5% 4% 5% 4%;
+    width: 48%;
+    height: 670px;
+
+
+}
+
+#first-div-heading{
+
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+
+#about-yourself{
+
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+
+}
+
+.section1-div{
+
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding-left: 5%;
+    margin-bottom: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.section1-div-content{
+
+   font-family: 'poppins';
+   color: rgb(96, 96, 96);
+   padding-left: 6%;
+   font-size: 14px;
+
+}
+
+#additional-div{
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#account-btn{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    height: 50px;
+    background-color: rgb(242, 95, 95);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'poppins';
+    
+
+}
+
+#account-btn:hover{
+
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+#learn-btn{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    height: 50px;
+    background-color:  rgb(253, 248, 241);
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'poppins';
+
+}
+
+#learn-btn:hover{
+
+    color: rgb(29, 165, 154);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+#section1-second-div{
+
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 190px;
+
+}
+
+#lemonyellowimg{
+
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+
+}
+
+#lmnimage{
+
+    width: 90%;
+
+
+}
+
+#works-with-gusto{
+
+    color: white;
+    font-size: 15px;
+    font-family: 'poppins';
+    font-weight: 500;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ############################# section-1 div utility class styling ################################# */
