@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Benefits</title>
-    <link rel="stylesheet" href="./Amit_Stylesheets/benefits.css">
+    <link rel="stylesheet" href="./Stylesheets/benefits.css">
     <link rel="stylesheet" href="./webfontkit GCentra/stylesheet.css">
     <link rel="stylesheet" href="./Webkit Clearfacebold Fonts/stylesheet.css">
+    <link rel="stylesheet" href="./Stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/97af42fa79.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="navbar">
@@ -51,7 +53,7 @@
         </div>
 
 
-        <div id="container">     
+        <div id="amit_container">     
             
   <!--This container div will hold 11 main divs and some submain divs (maindiv's child div) in it and it will be used for display property -->
 
@@ -86,7 +88,7 @@
                     <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/illo-c-doctors-5e0c8afeac0a2570c464a700353174c1a2a6b2d5520147f30bd6bd33eb936ee8.png.webp" alt="">
                     
             </div>
-            <div id="plusBtn1"><p>+</p></div>
+            <div id="plusBtn1"><p id="allplusBtn1">+</p></div>
         </div>
 
             <div id="backsidefbox1">
@@ -94,7 +96,7 @@
                 <h4>Broker integration</h4>
                 <p>In most cases, we can integrate your existing broker and eligible health plans. That way, you and your broker can manage HR and benefits all in one place.</p>
             </div>
-                <div id="crossBtn1"><p>x</p></div>
+                <div id="crossBtn1"><p id="allcrossBtn1">x</p></div>
             </div>
 
             <div id="fbox2">
@@ -136,13 +138,13 @@
             <div class="smalldiv1" id="maindiv5small">LOW-COST</div>
          
             <div id="maindiv5img"><img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/benefits_card@2x-ed6ee174622fe3542cff977172456bb724e1664909bb15f5a7c98e674bee292c.jpg.webp" alt=""></div>
-            <div id="plusBtn2"><p>+</p></div>
+            <div id="plusBtn2"><p id="allplusBtn2">+</p></div>
         </div>
 
         <div id="maindiv5backside">
             <h4>HSA and FSA</h4>
             <p>Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA) are two ways to contribute tax-free dollars toward health care expenses.</p>
-            <div id="crossBtn2"><p>x</p></div>
+            <div id="crossBtn2"><p id="allcrossBtn2">x</p></div>
         </div>
 
         <div id="maindiv6">
@@ -151,7 +153,7 @@
             <div class="smalldiv1" id="maindiv6small">NO-COST</div>
             <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/gusto_debit_card@2x-01f054f3cd5a8f34bae84d7d74e6f3debc61fec6a28d4fa546e36afb18a92cc1.png.webp" alt="">
             
-            <div id="plusBtn3"><p>+</p></div>
+            <div id="plusBtn3"><p id="allplusBtn3">+</p></div>
         </div>
 
         <div id="maindiv6backside">
@@ -160,7 +162,7 @@
             <p>With a Cash Account, your employees can set up automatic savings and smart spending. Their spending account is linked to a debit card so they can track purchases and set financial goals.</p>
             <P>Bonus! You can deposit paychecks right into their accounts, avoiding the costs of lost, stolen, or fraudulent checks.</P>
                 <p><a href="">Learn more</a></p>
-                <div id="crossBtn3"><p>x</p></div>
+                <div id="crossBtn3"><p id="allcrossBtn3">x</p></div>
         </div>
 
         <div id="maindiv7">
@@ -207,15 +209,191 @@
             <p>Open enrollment coming up? We make it easy to explore plans, work with employees, and we’ll even submit paperwork right to your carrier.</p>
         </div>
     </div>
+</div>             
+<!--This container div will be used for display none or block property and it ending here, it contains all the maindiv11 divs -->
 
-        <!-- all the above div inside container will display all categories -->
+
+
+          <div id="lowcost_container">
+
+            <div id="lowcostmaindiv4">
+                <h4>Workers’ compensation</h4>
+                <div class="lowcostsmalldiv1" id="lowcostcompensmalldiv">LOW-COST</div>
+                <p>We make it easy to stay compliant and protect your team — plus, it’s the law in most states.</p>
+            </div>
+    
+            <div id="lowcostmaindiv5">
+                <h4>HSA and FSA</h4>
+                <div class="lowcostsmalldiv1" id="lowcostmaindiv5small">LOW-COST</div>
+             
+                <div id="lowcostmaindiv5img"><img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/benefits_card@2x-ed6ee174622fe3542cff977172456bb724e1664909bb15f5a7c98e674bee292c.jpg.webp" alt=""></div>
+
+                <div id="lowcostplusBtn2"><p>+</p></div>
+            </div>
+    
+            <div id="lowcost_maindiv5backside">
+                <h4>HSA and FSA</h4>
+                <p>Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA) are two ways to contribute tax-free dollars toward health care expenses.</p>
+                <div id="lowcostcrossBtn2"><p>x</p></div>
+            </div>
+
+            <div id="lowcostmaindiv10">
+                <h4>Commuter benefits</h4>
+                <div class="lowcostsmalldiv1" id="lowcostmaindiv10small">LOW-COST</div>
+                <img src="project img1.png" alt="">        
+            </div>
+
+
+          </div>                   <!-- this filter the LOW-COST category -->
+
+
+
+
+          <div id="nocost_container">
+
+            <div id="nocostmaindiv1">
+
+                <div id="nocostwallet1">
+  
+          <h4>Gusto Wallet app</h4>
+         
+          <p>The Gusto Wallet app makes financial health a reality for your employees. They can manage their paychecks, save money, access emergency cash, and more.</p>
+          <p><a href="#">Learn more</a></p>
+      </div>
+  
+      <div id="nocostwallet2">
+          <div class="nocostsmalldiv1">NO-COST</div>
+          <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/gusto_wallet_app_hero@2x-36b775ba6e231fb62b26e87bad6aa968b988876f4b5c22499895ebe3271efdc8.png.webp" alt="">
+      </div>
+  
+      </div>
+
+      <div id="nocostmaindiv6">
+
+        <h4>Cash Accounts¹</h4>
+        <div class="nocostsmalldiv1" id="nocostmaindiv6small">NO-COST</div>
+        <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/gusto_debit_card@2x-01f054f3cd5a8f34bae84d7d74e6f3debc61fec6a28d4fa546e36afb18a92cc1.png.webp" alt="">
+        
+        <div id="nocostplusBtn3"><p>+</p></div>
+    </div>
+
+    <div id="nocost_maindiv6backside">
+
+        <h4>Cash Accounts¹</h4>
+        <p>With a Cash Account, your employees can set up automatic savings and smart spending. Their spending account is linked to a debit card so they can track purchases and set financial goals.</p>
+        <P>Bonus! You can deposit paychecks right into their accounts, avoiding the costs of lost, stolen, or fraudulent checks.</P>
+            <p><a href="">Learn more</a></p>
+            <div id="nocostcrossBtn3"><p>x</p></div>
+    </div>
+
+    <div id="nocostmaindiv8">
+        <h4>Paycheck splitter</h4>
+        <div class="nocostsmalldiv1" id="nocostmaindiv8small">NO-COST</div>
+        <p>To help with budgeting and savings goals, your employees can split paychecks between multiple accounts.</p>
+    </div>
+
+    <div id="nocostmaindiv9">
+        <h4>Cashout²</h4>
+        <div class="nocostsmalldiv1" id="nocostmaindiv9small">NO-COST</div>
+        
+        <div id="nocostmaindiv9img">
+            <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/cashout@2x-bf3a33d7fb65d673b654511be94a66e692c006972b592b533a0264b79c4ad3eb.png.webp" alt="">
+            <p><a href="">Learn more</a></p>
+        </div>
+    </div>
+
+    <div id="nocostmaindiv11">
+        <h4>Renewals</h4>
+        <div class="nocostsmalldiv1" id="nocostmaindiv11small">NO-COST</div>
+        <p>Open enrollment coming up? We make it easy to explore plans, work with employees, and we’ll even submit paperwork right to your carrier.</p>
+    </div>
+
+
+
+
+          </div>              <!-- this above div filter the NO-COST category -->
+
+
+
+
+
+          <div id="premium_container">
+
+
+            <div id="premiummaindiv2"> 
+                <div id="premiumfbox1">
+                    <div id="premiumfbox1inner1">
+                    <h4>Broker integration</h4>
+                    <p>Move your existing health
+                        insurance broker to Gusto.</p>
+                    </div>
+    
+                    <div id="premiumfbox1inner2">
+                        <div class="premiumsmalldiv1" id="premiumsmalldiv123">PREMIUM</div>
+                        <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/illo-c-doctors-5e0c8afeac0a2570c464a700353174c1a2a6b2d5520147f30bd6bd33eb936ee8.png.webp" alt="">
+                        
+                </div>
+                <div id="premiumplusBtn1"><p>+</p></div>
+            </div>
+    
+                <div id="premium_backsidefbox1">
+                    <div id="premiuminside1">
+                    <h4>Broker integration</h4>
+                    <p>In most cases, we can integrate your existing broker and eligible health plans. That way, you and your broker can manage HR and benefits all in one place.</p>
+                </div>
+                    <div id="premiumcrossBtn1"><p>x</p></div>
+                </div>
+    
+                <div id="premiumfbox2">
+                    <h4>401(k)</h4>
+                    <div class="premiumsmalldiv1" id="premiumfbox2smalldiv">PREMIUM</div>
+                    <div id="premiumsvgtag"><p >$1,720</p></div>
+                    <p><a href="">Learn more</a></p>
+                </div>
+            </div>
+    
+    
+            <div id="premiummaindiv3">
+    
+                <div id="premiumhealthdiv">
+                    <div class="premiumsmalldiv1" id="premiumhealthsmalldiv">PREMIUM</div>
+                    <h4>Health insurance administration</h4>
+                    <p>Health insurance (and the peace of mind it offers) is such a valuable benefit for your hardworking employees. With more than 9000 plans, 30+ carriers, and licensed advisors, we can help you craft the right plan for your team and budget.</p>
+                </div>
+    
+                <div id="premiumhealthImg">
+                    <video src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/mov/benefits_white_lg-809cc39aef13f021cf9387d925b9fa9aa477ec6f58799625164855d5c518bd39.mp4"></video>
+                    <div id="premiumhealthatag"><a href="">Learn more</a></div>
+                   
+                </div>
+            </div>
+
+
+            <div id="premiummaindiv7">
+                <div id="premiumchildDiv1">
+                    <h4>Dental</h4>
+                    <div class="premiumsmalldiv1" id="premiumchilddiv1small">PREMIUM</div>
+                    <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/illo-c-toothbrush@2x-be5a3eba31f0017e88e92e979a8f2f47230ed4dce549adb1a9b4780aab2e00ea.png.webp" alt="">
+                </div>
+    
+                <div id="premiumchildDiv2">
+                    <h4>Vision</h4>
+                    <div class="premiumsmalldiv1" id="premiumchilddiv2small">PREMIUM</div>
+                    <img src="https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/illo-c-glasses@2x-9f7f5d7006c298a519de8a69f759447017514110558d01bdc7df76dc1b5508cd.png.webp" alt="">
+                </div>
+            </div>
+          </div>                 <!-- this filter the PREMIUM category -->
+
+
+
+                 
 
         <div id="below_lines">
         <p id="below_line1">Stated employee benefits require that the employer has an active account with Gusto.</p>
         <p id="below_line2">¹Gusto is a payroll services company, not a bank. Banking services provided by nbkc bank, Member FDIC.</p>
         <p id="below_line3">²The Cashout Program is issued by Sunrise Banks, N.A., Member FDIC. The Sunrise Banks, N.A. Privacy Policy can be found <a href="https://cdn.brandfolder.io/PDKUP37J/as/3swxq8gmr9zntbmwvj75h/Sunrise_Banks_GBLA_Notice.pdf">here.</a></p>
     </div>
-        </div>          <!--This container div will be used for display none or block property and it ending here -->
+                 
 
 
         <div id="rethink">
@@ -401,17 +579,24 @@
 
     <div id="frequntlyQues">
         <div id="frequently_asked">
+            
             <h2>Frequently asked questions</h2>
-            <h3 id="question1">I’m new to benefits. How do I get set up?</h3>
-            <p id="answer1">Once you set up payroll with Gusto, you can view your recommended plans right from your account. Our fully-licensed advisors are also available to answer questions and help you choose a package that meets your budget and your team’s needs, should your group qualify for insurance plans. Have more questions? Call one of our licensed advisors today.</p>
+            <div class="ques1" id="question1"><h3>I’m new to benefits. How do I get set up?</h3>
+                <span id="span1"><i id="itag1" class="fa-solid fa-angle-right"></i></span></div>
 
-            <h3 id="question2">Are Gusto’s brokers licensed?</h3>
+                <p id="answer1">Once you set up payroll with Gusto, you can view your recommended plans right from your account. Our fully-licensed advisors are also available to answer questions and help you choose a package that meets your budget and your team’s needs, should your group qualify for insurance plans. Have more questions? Call one of our licensed advisors today.</p>
+        
+
+            <div class="ques1"  id="question2"><h3>Are Gusto’s brokers licensed?</h3>
+                <span><i id="itag2" class="fa-solid fa-angle-right"></i></span></div>
             <p id="answer2">Absolutely! Gusto’s benefits advisors are fully-licensed professionals with years of experience. And they’re available by phone or email when you or your employees need some advice. <a href="">Learn more</a></p>
 
-            <h3 id="question3">How does open enrollment work?</h3>
+            <div class="ques1"  id="question3"><h3>How does open enrollment work?</h3>
+                <span><i id="itag3" class="fa-solid fa-angle-right"></i></span></div>
             <p id="answer3">With Gusto, you get 100% online enrollment. Your employees can enroll in benefits, add dependents, and review their plan details in their Gusto account. We also have dedicated help just for employees to answer their benefits questions. Learn more about open enrollment <a href="">here</a>.</p>
 
-            <h3 id="question4">How do my employees make changes, like adding dependents?</h3>
+            <div class="ques1"  id="question4"><h3>How do my employees make changes, like adding dependents?</h3>
+                <span><i id="itag4" class="fa-solid fa-angle-right"></i></span></div>
             <p id="answer4">Your employees can make updates right in their Gusto account. It’s easy to add a dependent, change an address, change a name, and more. <a href="">See a demo</a>.</p>
         </div>
     </div>
@@ -427,5 +612,5 @@
     </div>
 </body>
 
-<script src="./Amit_Scripts/benefits.js"></script>
+<script src="./Scripts/benefits.js"></script>
 </html>
