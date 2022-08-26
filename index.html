@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusto</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/bc878c96a1.js" crossorigin="anonymous"></script>
+
+
+    
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="first-part">
+
+            <a href="./index.html" id="logo"><img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="" id="logo-image"></a>
+            <a href="#" id="why-gusto">Why Gusto</a>
+            <div id="payroll">
+                <h4 id="payroll-heading">Payroll and more</h4>
+                <i class="fa-solid fa-angle-down" id="payroll-icon"></i>
+                <div id="payroll-part">
+                    <h1>bharat</h1>
+                    <a href="www.google.com">google</a>
+                </div>
+
+                
+            </div>
+
+            <div id="pricing">
+                <a href="#">Pricing</a>
+            </div>
+
+            <div id="accountant">
+                <h4 id="accountant-heading">For Accountants</h4>
+                <i class="fa-solid fa-angle-down" id="accountant-icon"></i>
+
+            </div>
+
+            <div id="built">
+                <h4 id="built-heading">Built for you</h4>
+                <i class="fa-solid fa-angle-down" id="built-icon"></i>
+            </div>
+
+            
+        </div>
+        <div id="second-part">
+
+           <div id="search">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <button id="search-button">Search</button>
+           </div>
+
+           <a href="#" id="sign-in">Sign in</a>
+            <div id="create-account-container">
+                <a href="#" id="create-account">Create Account</a>
+            </div>
+           
+            
+        </div>
+
+       
+    </div>
+
+
+     
+        
+        <div id="accountant-part"></div>
+        <div id="built-part"></div>
+        
+    
+
+    <section id="section1">
+
+       <div id="section1-first-div">
+
+        <h1 id="first-div-heading">Set your business up with modern payroll, benefits, and more.</h1>
+
+        <p id="about-yourself">Tell us a little about yourself.</p>
+
+        <div class="section1-div">
+
+            <img src="https://prod.gusto-assets.com/assets/packs/media/hp_segment_radio/hiring-and-onboarding-5e357ad9.svg" alt="Employer" class="section1-div-image">
+
+            <p class="section1-div-content">I'm an employer interested in Gusto</p>
+
+        </div>
+
+        <div class="section1-div">
+
+            <img src="https://prod.gusto-assets.com/assets/packs/media/hp_segment_radio/calculator-eed2b9d2.svg" alt="Employer" class="section1-div-image">
+
+            <p class="section1-div-content">I'm an accountant interested in Gusto</p>
+
+        </div>
+
+        <div class="section1-div">
+
+            <img src="https://prod.gusto-assets.com/assets/packs/media/hp_segment_radio/id-card-b0bed2c9.svg" alt="Employer" class="section1-div-image">
+
+            <p class="section1-div-content">My company already uses Gusto</p>
+
+        </div>
+
+        <div id="additional-div">
+
+            <a href="#" id="account-btn">Create an account</a>
+            <a href="#" id="learn-btn">Learn more</a>
+
+        </div>
+
+       </div>
+
+       <div id="section1-second-div">
+
+        <div id="lemonyellowimg">
+            <img src="https://prod.gusto-assets.com/assets/svg/company/signature-lemon-yellow-c41f76ecdb0e4736ee8c2513e974cf8e6c00168d61b0d4a630614330e31b16c8.svg" alt="LemonYellow" id="lmnimage">
+        </div>
+
+        <h6 id="works-with-gusto">WORKS WITH GUSTO</h6>
+
+       </div>
+
+    </section>
+   
+
+</body>
+</html>
+
+
+<script>
+
+    // let payroll= document.getElementById("payroll");
+    let accountant = document.getElementById("accountant");
+    let built = document.getElementById("built");
+
+    //  payroll.addEventListener("mouseenter", divComeDown1);
+    //  payroll.addEventListener("mouseleave", divComeUP1)
+
+     accountant.addEventListener("mouseenter", divComeDown2);
+     accountant.addEventListener("mouseleave", divComeUP2)
+
+     built.addEventListener("mouseenter", divComeDown3);
+     built.addEventListener("mouseleave", divComeUP3)
+
+    //  console.log(payroll)
+
+    // let payroll_part = document.getElementById("payroll-part");
+
+    //     payroll_part.addEventListener("mouseenter", showDiv);
+
+    //     function showDiv(){
+
+    //         payroll_part.style.display = "block";
+
+    //     }
+
+     function divComeDown1(){
+
+         document.getElementById("payroll-heading").style.color = "rgb(29, 165, 154)"
+         document.getElementById("payroll-heading").style.fontWeight = "600"
+
+         document.getElementById("payroll-icon").style.transform = "rotate(180deg)"
+         document.getElementById("payroll-icon").style.transition= "all 0.2s ease-in-out"
+
+         document.getElementById("payroll-part").style.display = "block"
+
+
+
+        
+
+
+     }
+
+
+     function divComeUP1(){
+
+        document.getElementById("payroll-heading").style.color = "black"
+        document.getElementById("payroll-heading").style.fontWeight = "400"
+
+        document.getElementById("payroll-icon").style.transform = "rotate(0deg)"
+        document.getElementById("payroll-part").style.display = "none"
+
+
+
+
+     }
+
+     function divComeDown2(){
+
+document.getElementById("accountant-heading").style.color = "rgb(29, 165, 154)"
+document.getElementById("accountant-heading").style.fontWeight = "600"
+
+document.getElementById("accountant-icon").style.transform = "rotate(180deg)"
+document.getElementById("accountant-icon").style.transition= "all 0.2s ease-in-out"
+
+document.getElementById("accountant-part").style.display = "block"
+
+
+
+
+}
+
+
+function divComeUP2(){
+
+document.getElementById("accountant-heading").style.color = "black"
+document.getElementById("accountant-heading").style.fontWeight = "400"
+
+document.getElementById("accountant-icon").style.transform = "rotate(0deg)"
+document.getElementById("accountant-part").style.display = "none"
+
+
+
+
+}
+
+
+function divComeDown3(){
+
+document.getElementById("built-heading").style.color = "rgb(29, 165, 154)"
+document.getElementById("built-heading").style.fontWeight = "600"
+
+document.getElementById("built-icon").style.transform = "rotate(180deg)"
+document.getElementById("built-icon").style.transition= "all 0.2s ease-in-out"
+
+document.getElementById("built-part").style.display = "block"
+
+
+
+
+}
+
+
+function divComeUP3(){
+
+document.getElementById("built-heading").style.color = "black"
+document.getElementById("built-heading").style.fontWeight = "400"
+
+document.getElementById("built-icon").style.transform = "rotate(0deg)"
+document.getElementById("built-part").style.display = "none"
+
+
+
+
+}
+
+</script>
