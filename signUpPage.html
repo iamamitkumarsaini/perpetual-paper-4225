@@ -42,7 +42,7 @@
         #shiv_container4,
         #shiv_container5,
         #shiv_container6,
-        #shiv_container7 {
+        #shiv_container7,#shiv_container9 {
             width: 35%;
             margin: auto;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -193,6 +193,24 @@
             color: white;
             background-color: #f45d48;
         }
+        #shiv_container9{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #shiv_container9>img{
+            width: 25%;
+        }
+        #shiv_container9>h1{
+            margin: 40px 0px -15px 0px;
+        }
+        #shiv_container9{
+            display: none;
+        }
+
+        
     </style>
 </head>
 
@@ -302,6 +320,11 @@
         <p id="tandm">By creating an account, you agree to the <a href="">terms & conditions</a>, the <a href="">payroll
                 terms</a>, and our <a href="">privacy policy</a>.</p>
     </div>
+    <div id="shiv_container9">
+        <img src="https://prod.gusto-assets.com/assets/packs/media/icons/illo-clock-homepage-57611d12.svg" alt="image">
+        <h1>Thanks!</h1>
+        <p>Just one moment.</p>
+    </div>
     <p id="abc">No credit card required · Secure site</p>
     <p>Does your company use Gusto today? <span><a href="">Sign in here</a></span></p>
 </body>
@@ -340,11 +363,17 @@
 
     function shiv_btn7() {
         document.getElementById("shiv_container7").style.display = "none";
-        document.getElementById("shiv_container8").style.display = "block";
+        setTimeout(function(){
+            thanks();
+        },0)
+        
     }
 
 
 
+    function thanks(){
+        document.getElementById("shiv_container8").style.display = "block";
+    }
 
     function shiv_back_btn2() {
         document.getElementById("shiv_container2").style.display = "none";
@@ -428,3 +457,5 @@
 
     })
 </script>
+
+//https://prod.gusto-assets.com/assets/packs/media/icons/illo-clock-homepage-57611d12.svg

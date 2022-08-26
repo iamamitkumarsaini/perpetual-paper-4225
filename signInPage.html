@@ -7,154 +7,7 @@
     <title>Sign In</title>
     <link rel="stylesheet" href="Webkit Clearfacebold Fonts/stylesheet.css">
     <link rel="stylesheet" href="webfontkit GCentra/stylesheet.css">
-    <style>
-        #main_container{
-            background-image: url("https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/illustrations/illo-people-with-bouquet-a88253a7.svg"),url("https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/illustrations/illo-2-person-scene-01ac18a3.svg");
-            background-position: -25px 170px,right 240px;
-            background-repeat: no-repeat;
-        }
-        #shiv_container{
-            width: 30%;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-            padding: 40px 60px 40px 60px;
-            border-radius: 5px;
-            margin-top: 75px;
-            margin-bottom: 30px;
-            background-color: white;
-        }
-        #shiv_container>div:first-child{
-            width: 45%;
-            margin: auto;
-            margin-bottom: 20px;
-        }
-        #shiv_container>div:first-child img{
-            width: 100%;
-        }
-        p,button,a{
-            font-family: centra_no2book;
-        }
-        a{
-            color: teal;
-        }
-        input{
-            padding: 15px;
-            border: none;
-            border-bottom: 1px solid #222525;
-            outline: none;
-            border-radius: 2px;
-            background-color: whitesmoke;
-            margin-top: -10px;
-        }
-        input:hover{
-            padding: 15px;
-            border: none;
-            outline: none;
-            border-bottom: 3px solid teal;
-            border-radius: 3px;
-            background-color: rgb(245, 253, 249);
-        }
-        input[type="checkbox"]{
-            cursor: pointer;
-            width: 20px;
-            height: 20px;
-            margin: 4px 10px 0px 0px;
-        }
-        #shiv_container>p:nth-child(7){
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        #signin{
-            padding: 15px;
-            color: white;
-            background-color: teal;
-            border: none;
-            border-radius: 5px;
-            font-family: centra_no2book;
-            cursor: pointer;
-            font-size: 17px;
-        }
-        #signin:hover{
-            background-color: rgb(0, 95, 95);
-        }
-        a:hover{
-            color: rgb(0, 95, 95);
-        }
-        #signin>img{
-            width: 3%;
-            color: teal;
-        }
-        #google{
-            width: 50%;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-            border: none;
-            color: gray;
-            background-color: white;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            margin-bottom: 15px;
-        }
-        #google:hover{
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        }
-        #google>img{
-            width: 10%;
-            margin-right: 10px;
-        }
-        #xero{
-            width: 50%;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            border-radius: 2px;
-            padding: 9px;
-            background-color: white;
-            color: rgb(87, 85, 85);
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        }
-        #xero:hover{
-            background-color: whitesmoke;
-        }
-        #xero>img{
-            width: 15%;
-            margin-right: 10px;
-        }
-        #intuit{
-            width:45%;
-            margin: auto;
-            border: 2px solid #0077c5;
-            border-radius: 5px;
-            padding: 14px;
-            color: #0077c5;;
-            background-color: white;
-        }
-        #or{
-            text-align: center;
-        }
-        #shiv_container>div:nth-child(11){
-            display: flex;
-            margin-bottom: 20px;
-        }
-        #shiv_container>p:last-child{
-            color: rgb(94, 94, 94);
-            text-align: center;
-        }
-        #shiv_footer{
-            text-align: center;
-            font-weight: bold;
-        }
-        button{
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="signInpage.css">
 </head>
 <body>
     <div id="main_container">
@@ -164,15 +17,17 @@
             <input type="email" id="shiv_email">
             <p><b>Password</b></p>
             <input type="password" id="shiv_password">
+            <a href="" onclick="show()" id="show"><b>show</b></a>
+            <a href="" onclick="hide()" id="hide"><b>hide</b></a>
             <p><a href=""><b>Having trouble signing in?</b></a></p>
             <p><input type="checkbox">Remember this device</p>
             <button id="signin" onclick="signIn()"><b>Sign In</b></button>
             <p id="or">or</p>
             <button id="google"> <img src="https://prod.gusto-assets.com/assets/packs/media/icons/partner-logo-google-cd0f2b38.svg"
-                alt="Google"><b>Sign up with Google</b>
+            alt="Google"><b>Sign up with Google</b>
             </button>
             <div>
-                <button id="xero"><img src="https://edge.xero.com/images/1.0.0/logo/xero-logo.svg" alt="image"><b>Sign In with Xero</b></button>
+            <button id="xero"><img src="https://edge.xero.com/images/1.0.0/logo/xero-logo.svg" alt="image"><b>Sign In with Xero</b></button>
             <button id="intuit"><b>Sign in with Intuit</b></button>
             </div>
             <p>Need help? <a href=""><b>Visit our Help Center.</b></a></p>
@@ -185,37 +40,4 @@
     </div>
 </body>
 </html>
-<script>
-    let userDataArr=JSON.parse(localStorage.getItem("userData"))|[];
-    let signIn = ()=>{
-        let email=document.getElementById("shiv_email").value;
-        let password=document.getElementById("shiv_password").value;
-        let getDataObj={
-            email,password
-        }
-       
-        let flag;
-        userDataArr.forEach((ele)=>{
-            if(getDataObj.email!=ele.email && getDataObj.password!=ele.password){
-                alert("User doesn't exist")
-                flag=false;
-                return;
-            }else if(getDataObj.password!=ele.password){
-                alert("Please enter a valid password")
-                flag=false;
-                return;
-            }else if(getDataObj.email!=ele.email){
-                alert("User doesn't exist")
-                flag=false;
-                return;
-            }else{
-                flag=true;
-            }
-        })
-
-        if(flag==true){
-            alert("Sign In successfull");
-            localStorage.setItem("verify_details",JSON.stringify(getDataObj));
-        }
-    }
-</script>
+<script src="signInpage.js"></script>
