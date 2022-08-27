@@ -8,215 +8,12 @@
     <title>Sign up page</title>
     <link rel="stylesheet" href="Webkit Clearfacebold Fonts/stylesheet.css">
     <link rel="stylesheet" href="webfontkit GCentra/stylesheet.css">
-    <style>
-        #shiv_navbar {
-            width: 100%;
-            height: 75px;
-            margin: 0px;
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-        }
-
-        #shiv_navbar>img {
-            margin: 20px;
-            width: 100px;
-        }
-
-        h1 {
-            text-align: center;
-            font-family: clearfacebold;
-            color: #222525;
-            font-size: 28px;
-        }
-
-        p {
-            text-align: center;
-            font-family: centra_no2book;
-            color: #222525;
-            font-size: 17px;
-            margin: 25px;
-        }
-
-        #shiv_container1,
-        #shiv_container2,
-        #shiv_container3,
-        #shiv_container4,
-        #shiv_container5,
-        #shiv_container6,
-        #shiv_container7,#shiv_container9 {
-            width: 35%;
-            margin: auto;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            padding: 30px;
-        }
-
-        #shiv_container2,
-        #shiv_container3,
-        #shiv_container4,
-        #shiv_container5,
-        #shiv_container6,
-        #shiv_container7,
-        #shiv_container8 {
-            display: none;
-        }
-
-        button {
-            width: 97%;
-            padding: 20px;
-            margin: 8px;
-            border-radius: 5px;
-            color: white;
-            background-color: teal;
-            border: none;
-            font-size: 15px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: rgb(16, 150, 150);
-        }
-
-        #abc {
-            font-size: 15px;
-            margin: 20px;
-        }
-
-        #shiv_header {
-            width: 35%;
-            margin: auto;
-            line-height: 20px;
-            padding: 30px;
-        }
-
-        span>a {
-            color: teal;
-        }
-
-        span {
-            color: teal;
-            font-family: centra_no2book;
-            margin: 10px;
-            cursor: pointer;
-        }
-
-        #bo,
-        #bn {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #shiv_container8 {
-            width: 33%;
-            margin: auto;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            padding: 30px;
-            line-height: 20px;
-        }
-
-        #shiv_container8>button {
-            width: 97%;
-            padding: 15px;
-            margin: 8px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #shiv_container8>button:nth-child(2) {
-            color: #222525;
-            background-color: whitesmoke;
-            border: 1px solid transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #shiv_container8>button:nth-child(2):hover {
-            color: teal;
-            background-color: rgb(220, 217, 217);
-            border: 1px solid transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #shiv_container8>button>img {
-            width: 5%;
-            margin-right: 5px;
-        }
-
-        #shiv_name,
-        #shiv_email,
-        #shiv_company,
-        #shiv_password,
-        #shiv_cpassword {
-            width: 90%;
-            padding: 16px;
-            margin: 7px;
-            border: 0.5px solid rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-        }
-
-        #shiv_employees,
-        #shiv_phone {
-            width: 38%;
-            padding: 16px;
-            margin: 7px;
-            border: 0.5px solid rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-        }
-
-        ul {
-            font-family: centra_no2book;
-            color: #4f5151;
-        }
-
-        #pr {
-            font-family: centra_no2book;
-            color: #4f5151;
-            margin: 30px 0px -10px 10px;
-        }
-
-        #tandm {
-            font-size: smaller;
-            color: #4f5151;
-        }
-
-        a {
-            color: teal;
-        }
-
-        #shiv_submit {
-            color: white;
-            background-color: #ef523c;
-        }
-
-        #shiv_submit:hover {
-            color: white;
-            background-color: #f45d48;
-        }
-        #shiv_container9{
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #shiv_container9>img{
-            width: 25%;
-        }
-        #shiv_container9>h1{
-            margin: 40px 0px -15px 0px;
-        }
-        #shiv_container9{
-            display: none;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="signUpPage.css">
 </head>
 
 <body>
     <div id="shiv_navbar">
-        <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg"
+            <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg"
             alt="image">
     </div>
     <div id="shiv_header">
@@ -303,22 +100,32 @@
                 alt="Google"><b>Sign up with Google</b></button>
         <p>or</p>
         <input type="text" id="shiv_name" placeholder="Full name">
+        <small id="empty_name"></small>
         <input type="email" id="shiv_email" placeholder="Work email address">
+        <small id="empty_email"></small>
         <input type="text" id="shiv_company" placeholder="Company name">
+        <small id="empty_company"></small>
         <input type="number" id="shiv_employees" placeholder="No. of employees">
         <input type="number" id="shiv_phone" placeholder="Company phone">
+        <div id="something">
+            <small id="empty_employees"></small>
+            <small id="empty_phone"></small>
+        </div>
         <input type="password" id="shiv_password" placeholder="Set password">
+        <small id="empty_password"></small>
         <div id="pr">Password strength:</div>
         <ul>
             <li>Use 8 or more characters.</li>
             <li>Use a minimum of one letter.</li>
             <li>Use a minimum of one number.</li>
         </ul>
-        <input type="password" id="shiv_cpassword" placeholder="Confirm password" required>
-        <button id="shiv_submit"><b>Get started</b></button>
-        <p>Already use Gusto?<span><a href="">Sign in here.</a></span></p>
-        <p id="tandm">By creating an account, you agree to the <a href="">terms & conditions</a>, the <a href="">payroll
-                terms</a>, and our <a href="">privacy policy</a>.</p>
+        <input type="password" id="shiv_cpassword" placeholder="Confirm password">
+        <small id="empty_cpassword"></small>
+        <button id="shiv_submit" onclick="submit_btn()"><b>Get started</b></button>
+        <p>Already use Gusto? <u onclick="signInHere()">Sign in here.</u></p>
+        <p id="tandm">By creating an account, you agree to the <a href="https://gusto.com/about/terms">terms &
+                conditions</a>, the <a href="https://gusto.com/about/terms/payroll">payroll
+                terms</a>, and our <a href="https://gusto.com/about/privacy">privacy policy</a>.</p>
     </div>
     <div id="shiv_container9">
         <img src="https://prod.gusto-assets.com/assets/packs/media/icons/illo-clock-homepage-57611d12.svg" alt="image">
@@ -326,136 +133,7 @@
         <p>Just one moment.</p>
     </div>
     <p id="abc">No credit card required · Secure site</p>
-    <p>Does your company use Gusto today? <span><a href="">Sign in here</a></span></p>
+    <p>Does your company use Gusto today? <u onclick="SignIn()">Sign in here.</u></p>
 </body>
-
 </html>
-<script>
-    function shiv_btn1() {
-        document.getElementById("shiv_container1").style.display = "none";
-        document.getElementById("shiv_container2").style.display = "block";
-    }
-
-    function shiv_btn2() {
-        document.getElementById("shiv_container2").style.display = "none";
-        document.getElementById("shiv_container3").style.display = "block";
-    }
-
-    function shiv_btn3() {
-        document.getElementById("shiv_container3").style.display = "none";
-        document.getElementById("shiv_container4").style.display = "block";
-    }
-
-    function shiv_btn4() {
-        document.getElementById("shiv_container4").style.display = "none";
-        document.getElementById("shiv_container5").style.display = "block";
-    }
-
-    function shiv_btn5() {
-        document.getElementById("shiv_container5").style.display = "none";
-        document.getElementById("shiv_container6").style.display = "block";
-    }
-
-    function shiv_btn6() {
-        document.getElementById("shiv_container6").style.display = "none";
-        document.getElementById("shiv_container7").style.display = "block";
-    }
-
-    function shiv_btn7() {
-        document.getElementById("shiv_container7").style.display = "none";
-        setTimeout(function(){
-            thanks();
-        },0)
-        
-    }
-
-
-
-    function thanks(){
-        document.getElementById("shiv_container8").style.display = "block";
-    }
-
-    function shiv_back_btn2() {
-        document.getElementById("shiv_container2").style.display = "none";
-        document.getElementById("shiv_container1").style.display = "block";
-    }
-
-    function shiv_back_btn3() {
-        document.getElementById("shiv_container3").style.display = "none";
-        document.getElementById("shiv_container2").style.display = "block";
-    }
-
-    function shiv_back_btn4() {
-        document.getElementById("shiv_container4").style.display = "none";
-        document.getElementById("shiv_container3").style.display = "block";
-    }
-
-    function shiv_back_btn5() {
-        document.getElementById("shiv_container5").style.display = "none";
-        document.getElementById("shiv_container4").style.display = "block";
-    }
-
-    function shiv_back_btn6() {
-        document.getElementById("shiv_container6").style.display = "none";
-        document.getElementById("shiv_container5").style.display = "block";
-    }
-
-    function shiv_back_btn7() {
-        document.getElementById("shiv_container7").style.display = "none";
-        document.getElementById("shiv_container5").style.display = "block";
-    }
-
-
-
-
-    function shiv_other_btn4() {
-        document.getElementById("shiv_container4").style.display = "none";
-        document.getElementById("shiv_container5").style.display = "block";
-    }
-
-    function shiv_notsure_btn5() {
-        document.getElementById("shiv_container5").style.display = "none";
-        document.getElementById("shiv_container6").style.display = "block";
-    }
-
-
-    let userDataArr = [];
-    document.getElementById("shiv_submit").addEventListener("click", function userData() {
-        let userDataObj = {
-            name: document.getElementById("shiv_name").value,
-            email: document.getElementById("shiv_email").value,
-            company: document.getElementById("shiv_company").value,
-            employessCount: document.getElementById("shiv_employees").value,
-            phoneNo: document.getElementById("shiv_phone").value,
-            password: document.getElementById("shiv_password").value,
-            cpassword: document.getElementById("shiv_cpassword").value
-        }
-
-
-
-        let flag;
-        if (userDataObj.name = "") {
-            alert("Please fill the required input")
-            flag = false;
-        } else if (userDataObj.phoneNo.length < 10 || userDataObj.phoneNo.length > 10) {
-
-            flag = false;
-        } else if (userDataObj.password.length < 8) {
-            alert("Please enter atleast 8 charcter!")
-            flag = false;
-        } else if (userDataObj.password !== userDataObj.cpassword) {
-            alert("Password doesn't match!")
-            flag = false;
-        } else {
-            flag = true;
-        }
-        if (flag === true) {
-            userDataArr.push(userDataObj);
-            localStorage.setItem("userData", JSON.stringify(userDataArr));
-            window.location.href = "thankyouPage.html";
-        }
-
-    })
-</script>
-
-//https://prod.gusto-assets.com/assets/packs/media/icons/illo-clock-homepage-57611d12.svg
+<script src="signUpPage.js"></script>
