@@ -1,0 +1,1113 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=PT+Serif&family=Poppins:wght@100;300;400;500;600&display=swap'); */
+
+*{
+
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+
+
+}
+
+
+
+#navbar{
+
+      width: 100%;
+      padding: 0% 2.5% 0% 2.5%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      z-index: 2;
+      background-color: white;
+}
+
+/* #navbar-part{
+
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+    position: relative;
+
+
+} */
+
+#first-part{
+
+    display: flex;
+    width: 63%;
+    justify-content: space-between;
+
+}
+
+#logo-image{
+
+    width: 100px;
+    /* height: 45px; */
+    margin-top: 7px;
+
+}
+
+#why-gusto{
+
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    font-family: 'centra_no2book';
+    font-weight: 400;
+
+}
+
+#why-gusto:hover{
+
+    color: rgb(29, 165, 154);
+
+}
+
+#first-part h4{
+
+    font-family: 'centra_no2book';
+    font-weight: 400;
+    font-size: 17px;
+    
+
+}
+
+#payroll{
+
+    display: flex;
+    height: 50px;
+    width: 160px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    
+
+}
+
+#payroll-part{
+
+    display: none;
+    position: absolute;
+    height: 380px;
+    width: 550px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: -40%;
+    top: 110%;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+
+}
+
+#payroll:hover #payroll-part{
+
+    display: block;
+
+}
+
+#payroll-part-first{
+
+    width: 100%;
+    height: 325px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 25px 25px 15px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+
+#payroll-part-second{
+
+    width: 100%;
+    height: 55px;
+    display: flex;
+
+
+}
+
+#see-demo{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgb(241, 237, 237);
+    border-right: 1px solid rgb(194, 192, 192);
+    border-bottom-left-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(29, 165, 154);
+    cursor: pointer;
+}
+
+#integrations{
+
+    width: 50%;
+    height: 100%;
+    background-color: rgb(241, 237, 237);
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(29, 165, 154);
+    cursor: pointer;
+
+
+}
+
+/* ################# payroll-box utility class ###################################### */
+
+#box5, #box6{
+
+    border-bottom: none;
+
+}
+.payroll-box{
+
+    width: 48%;
+    border-bottom: 1px solid rgb(194, 192, 192);
+    height: 90px;
+    cursor: pointer;
+
+}
+
+
+
+.payroll-box>h5{
+
+    color: rgb(29, 165, 154);
+    font-family: 'centra_no2book';
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.payroll-box>p{
+
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    font-weight: 400;
+
+
+}
+
+/* ################################################################################# */
+
+
+#pricing{
+    display: block;
+}
+
+
+
+#pricing>a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'centra_no2book';
+    font-weight: 400;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pricing>a:hover{
+    color: rgb(29, 165, 154);
+
+}
+
+#accountant{
+
+    display: flex;
+    height: 50px;
+    width: 155px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+#accountant-part{
+
+    display: none;
+    position: absolute;
+    height: 340px;
+    width: 520px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: -35%;
+    top: 110%;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+#accountant:hover #accountant-part{
+
+    display: block;
+
+}
+
+#accountant-part-first{
+
+    width: 100%;
+    height: 100%;
+    padding: 25px 22px 18px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+/* ############################# accountant-part-first utility class ######################### */
+
+#accountant-part-box5{
+
+border-bottom: none;
+width: 45%;
+
+}
+
+
+#accountant-part-box6{
+
+    border-bottom: none;
+
+}
+
+
+.accountant-box{
+
+    width: 47.5%;
+    border-bottom: 1px solid rgb(194, 192, 192);
+    height: 90px;
+    cursor: pointer;
+
+}
+
+
+
+.accountant-box>h5{
+
+    color: rgb(29, 165, 154);
+    font-family: 'centra_no2book';
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.accountant-box>p{
+
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    font-weight: 400;
+
+
+}
+
+
+/* ######################################################################################################## */
+
+#built{
+
+    display: flex;
+    height: 50px;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+
+#built-part{
+
+    display: none;
+    position: absolute;
+    height: 230px;
+    width: 280px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: -20%;
+    top: 110%;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+
+}
+
+#built:hover #built-part{
+    display: block;
+}
+
+
+#built-part-first{
+
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px 15px 20px;
+
+}
+
+/* ################################### built-part utility class ################################ */
+
+#built-part-box2{
+
+    border-bottom: none;
+    margin-top: 15px;
+
+}
+
+.built-box{
+
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid rgb(194, 192, 192);
+    cursor: pointer;
+
+}
+
+.built-box>h5{
+
+    color: rgb(29, 165, 154);
+    font-family: 'centra_no2book';
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.built-box>p{
+
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+
+
+/* ############################################################################################ */
+
+#second-part{
+
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+
+}
+
+#search{
+
+    width: 80px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+
+
+#search-icon{
+
+    color: rgb(29, 165, 154);
+
+}
+
+#search-button{
+
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: none;
+    font-family: 'centra_no2book';
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+#sign-in{
+
+    text-decoration: none;
+    color: black;
+    width: 80px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(253, 248, 241);
+    font-family: 'centra_no2book';
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+#sign-in:hover{
+
+    color: rgb(29, 165, 154);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+
+#create-account{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(242, 95, 95);
+    width: 160px;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'centra_no2book';
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+#create-account:hover{
+
+    background-color: rgb(247, 71, 71);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+
+
+/* ########################################## section-1 styling ###################################### */
+
+#section1{
+
+    width: 100%;
+    height: 142vh;
+    z-index: 1;
+    background-image: url('https://prod.gusto-assets.com/assets/homepage/hp-lemon-yellow-miami-745d69be5bfb0771505b993c2fa7da923b63bd8a684a0a3697533ba4aa72935c.jpg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 2.5% 0% 3.5%;
+    position: relative;
+
+
+
+}
+
+#section1-first-div{
+
+    border-radius: 5px;
+    background-color: white;
+    padding: 3.5% 4% 5% 4%;
+    width: 48%;
+    height: 670px;
+
+
+}
+
+#first-div-heading{
+
+    font-family: 'clearfacebold';
+    font-weight: 400;
+    font-size: 45px;
+}
+
+
+#about-yourself{
+
+    font-family: 'centra_no2book';
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+.section1-div{
+
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding-left: 5%;
+    margin-bottom: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.section1-div-content{
+
+    font-family: 'centra_no2book';
+   color: rgb(96, 96, 96);
+   padding-left: 6%;
+   font-size: 15px;
+
+}
+
+#additional-div{
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#account-btn{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    height: 50px;
+    background-color: rgb(242, 95, 95);
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'centra_no2book';
+    
+
+}
+
+#account-btn:hover{
+
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+#learn-btn{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    height: 50px;
+    background-color:  rgb(253, 248, 241);
+    color: black;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'centra_no2book';
+
+}
+
+#learn-btn:hover{
+
+    color: rgb(29, 165, 154);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+#section1-second-div{
+
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 190px;
+
+}
+
+#lemonyellowimg{
+
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+
+}
+
+#lmnimage{
+
+    width: 90%;
+
+
+}
+
+#works-with-gusto{
+
+    color: white;
+    font-size: 15px;
+    font-family: 'centra_no2book';
+    font-weight: 500;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ############################################ section-2 styling ###################################### */
+
+#section2{
+
+    width: 100%;
+    height: 300px;
+
+
+    padding-top: 25px;
+
+}
+
+#section2-main-box{
+
+    width: 85%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+
+#section2-first-box{
+
+    width: 26%;
+    height: 100%;
+    /* background-image: url('https://prod.gusto-assets.com/assets/homepage/doodle-background@2x-2a4559c1bf2bc93978a3443e6f2e6543da688efd85bcd47b97411deb3061e18c.png.webp') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* padding: 5% 1% 2% 1%; */
+    position: relative;
+    
+}
+
+#background-image{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#background-image>img{
+
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+}
+
+#section2-first-box>p{
+
+    font-family: 'clearfacebold';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.5;
+    opacity: 2;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+
+}
+
+#section2-second-box{
+
+    width: 24%;
+    height: 100%;
+    padding: 5% 1% 2% 1%;
+
+    
+}
+
+#section2-second-box>h3{
+
+    text-align: center;
+    font-family: 'centra_no2book';
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+#rating-img{
+
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+
+#rating-img>img{
+
+    width: 100%;
+
+}
+
+#section2-second-box>p{
+
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.bold{
+    font-weight: 600;
+    margin-right: 5px;
+
+}
+
+#section2-third-box{
+
+    width: 25%;
+    height: 100%;
+    padding: 4% 1% 2% 1%;
+
+}
+
+#section2-third-box>p{
+
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    text-align: center;
+
+}
+
+#section2-fourth-box{
+
+    width: 25%;
+    height: 100%;
+    padding: 4% 1% 2% 1%;
+
+}
+
+#section2-fourth-box>p{
+
+    
+    font-family: 'centra_no2book';
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.cup-image{
+
+    width: 50px;
+    height: 60px;
+    margin: auto;
+
+}
+
+.cup-image>img{
+
+    width: 100%;
+
+}
+
+.cup-part-heading{
+
+    font-family: 'centra_no2book';
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 5px;
+
+}
+
+
+
+/* ############################### section3 styling ################################## */
+
+#section3{
+
+    width: 100%;
+    height: 145vh;
+    background-color: #F8F5F2;
+    font-family: 'centra_no2book';
+    position: relative;
+
+
+
+}
+
+#platform_div{
+    width: 100%;
+
+}
+
+#platform1{
+    width: 12%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    padding-top: 6.5%;
+    margin-bottom: 20px;
+
+}
+
+#platform1>p>strong{
+    color: #F45D48;
+}
+
+#platform2{
+    width: 45%;
+    margin: auto;
+    margin-top: 1.3%;    
+}
+
+#platform2>h2{
+    width: 100%;
+    font-size: 45px;
+    font-family: 'clearfacebold';
+    text-align: center;
+
+}
+
+#platform3{
+    width: 50%;
+    margin: auto;
+    margin-top: 1.6%;
+}
+
+#platform3>p:first-child{
+    line-height: 25px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#platform3>p:last-child{
+    margin-top: 28px;
+    text-align: center;
+}
+
+#platform3>p:last-child>a{
+    color: #0A8080;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#platform3>p:last-child>a:hover{
+    text-decoration: underline;
+    color: rgb(29, 165, 154);
+}
+
+#platform4{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.platform_img{
+    width: 13%;
+    margin: auto;
+    margin-bottom: 19%;
+}
+
+.platform_img>img{
+    width: 65%;
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+
+.platform_img>p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222525;
+}
+
+.platform_img>p>a{
+    color: #222525;
+    text-decoration: none;
+}
+
+.platform_img>p>a:hover{
+
+    color: #0A8080;
+    text-decoration: underline;
+
+}
+
+
+#platform5{
+
+    width: 37%;
+    height: 300px;
+    position: absolute;
+    top: 68%;
+    left: 31%;
+
+}
+
+
+
+/* ################################################# section4 styling ################################ */
+
+#section4{
+
+    width: 100%;
+    height: 420px;
+    background-color: #0a8080;
+    padding-top: 6%;
+
+}
+
+#section4-main-div{
+
+    width: 45%;
+    height: 300px;
+    margin: auto;
+    
+
+}
+
+#section4-first-div>p{
+
+    color: white;
+    font-family: 'centra_no2book';
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 40px;
+
+
+}
+
+#section4-second-div{
+
+    width: 85%;
+    margin: auto;
+    display: flex;
+    height: 45px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+
+#section4-image{
+
+    width: 50%;
+    border-right: 1px solid white;
+
+
+}
+
+#section4-image>div:nth-child(1){
+
+    width: 90%;
+    margin: auto;
+
+
+}
+
+#section4-image>div:nth-child(1)>img{
+
+    width: 100%;
+
+}
+
+#section4-imagediv-content{
+
+    width: 50%;
+    color: white;
+    font-family: 'centra_no2book';
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+/* ############################ footer styling ############################### */
+
+#footer{
+
+    width: 100%;
+    height: 200vh;
+    background-color: #ffffff;
+    border: 2px solid black;
+
+}
+
+#footer-head{
+
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+
+}
+
+#footer-head>h1{
+
+    font-family: 'clearfacebold';
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+#footer-head>p>a{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 47px;
+    color: white;
+    background-color: #F45D48;
+    font-family: 'centra_no2book';
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+#footer-head>p>a:hover{
+
+    background-color: #ec3d26;
+    transition: all 0.3s ease-in-out;
+
+}

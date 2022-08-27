@@ -1,0 +1,421 @@
+/* Upper portion */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'clearfacebold';
+    font-weight: normal;
+    font-style: normal;
+}
+p,a{
+    font-family: 'centra_no2book';
+    font-weight: normal;
+    font-style: normal;
+}
+#upper_box{
+    display:flex;
+    /* border:1px solid red; */
+}
+#upper_box>#img1{
+    /* border:1px solid green; */
+    width:40%;
+    margin-top: 90px;
+    margin-right:90px;
+}
+#upper_box>#img1>img{
+    width:230%;
+    height:110%;
+}
+#upper_box>#box{
+    /* border:1px solid blue; */
+    text-align: center;
+    width:130%;
+}
+#upper_box>#box>#box1{
+    color:red;
+}
+#upper_box>#box>#box2{
+    font-size: 20px;
+}
+#upper_box>#box>#btn{
+    background-color: red;
+    border:1px solid red;
+    width:150px;
+    height:50px; 
+    border-radius: 10px;   
+}
+#upper_box>#box>#btn>a{
+    text-decoration: none;
+    color: white;
+}
+#upper_box>#img2{
+    /* border:1px solid green; */
+    width:40%;
+}
+#upper_box>#img2>img{
+    margin-top: 110px;
+    width:140%;
+    margin-left:-100px
+}
+
+/* Middle portion */
+#mid_box{
+    /* border:1px solid red; */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#mid_box>#mid_box1{
+   font-size:20px;
+}
+#mid_box>#mid_box2{
+    font-size: 19px;
+}
+#mid_box>#mid_box3{
+    /* border:1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#mid_box>#mid_box3>.box>img{
+    /* border:1px solid green; */
+    width:20%
+}
+#mid_box>#mid_box3>.box>div>a{
+    text-decoration: none;
+    color:black;
+    margin-top:10px;
+}
+#mid_box>#mid_box3>.box>div>a:hover{
+    text-decoration: underline;
+    color:teal;
+}
+
+/* middle Protion 2 */
+
+#container{
+    /* border:1px solid red; */
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(249, 229, 204);
+}
+#container>div>h1{
+    padding-top: 50px;
+    margin-top: 90px;
+}
+#container>button{
+    
+    background-color: red;
+    border:1px solid red;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px
+}
+
+#container>button>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* link pages */
+#payroll{
+    margin-top: 30px;
+    /* border:1px solid red; */
+    margin-bottom: 30px;
+    display:grid;
+    grid-template-columns:70% 30%;
+}
+#payroll>#paybox{
+    /* border:1px solid blue; */
+    margin-left: 30px;
+}
+
+#payroll>#paybox>#paybox1{
+    margin-top: 50px;
+    color:red;
+    font-size: 19px;
+}
+#payroll>#paybox>#paybox2{
+    font-size: 22px;
+}
+#payroll>#paybox>#paybox3{
+    font-size: 19px;
+}
+#payroll>#paybox>#paybox4{
+    color:teal;
+    font-size: 19px;
+}
+#payroll>#paybox>#paybox4:hover{
+    color:teal;
+    text-decoration: underline;
+}
+#payroll>#paybox>#paybox5{
+    margin-top:50px;
+    /* border:1px solid darkgreen; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#payroll>#paybox>#paybox5>.b1{
+    display: grid;
+    grid-template-columns:20% 80%;
+    /* border:1px solid red; */
+}
+/* #payroll>#paybox>#paybox5>.b1>div{
+    border:1px solid black;
+} */
+/* 
+#payroll>#imgbox{
+    border: 1px solid blue;
+} */
+#payroll>#imgbox>div{
+    /* border:1px solid green; */
+    margin-right: 30px;
+    margin-top: 250px;
+}
+#payroll>#imgbox>div>img{
+    width:130%
+}
+#payroll>#b2{
+    margin-top: 100px;
+     display: grid;
+     grid-template-columns: 20% 80%;
+     margin-left:80px;
+     background-color: bisque;
+     width:500px;
+     border-radius: 10px;
+     height:100px;
+}
+
+
+#employ{
+    margin-top: 200px;
+    text-align: center;
+    background-color: bisque;
+    margin-bottom: 100px;
+    /* border:1px solid red */
+}
+#employ>#emp1{
+    padding-top: 30px;
+    color:red;
+    font-size: 19px;
+}
+#employ>#emp2{
+    font-size: 22px;
+}
+#employ>#emp3{
+    font-size: 19px;
+}
+#employ>#emp4{
+    font-size: 19px;
+    color:teal;
+    margin-bottom: 50px;
+}
+#employ>#emp4:hover{
+    color:teal;
+    text-decoration: underline;
+}
+
+#employ>#empimg{
+    /* border:1px solid red; */
+    margin-bottom: 100px;
+}
+#employ>#empimg>img{
+    width:100%;
+}
+#employ>#emp5{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border:1px solid red; */
+}
+#employ>#emp5>.emp_box{
+    /* border:1px solid blue; */
+    width:80%;
+    margin-left: 50px;
+    background-color: white;
+    margin-bottom: 100px;
+}
+#employ>#emp5>.emp_box>div>p{
+    color:gray;
+}
+#employ>#emp5>.emp_box>.emp_data>.emp_img_data{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-left: 100px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+#employ>#emp5>.emp_box>.emp_data>.emp_img_data>div{
+    font-size: 19px;
+    text-align: left;
+    
+}
+
+#time{
+    /* border:1px solid red; */
+    display: grid;
+      grid-template-columns: repeat(2,1fr);
+}
+#time>#timebox>#timebox1{
+      font-size: 19px;
+      color: red;
+      
+}
+
+#time>#timebox>#timebox2{
+    font-size: 22px;
+}
+#time>#timebox>#timebox3{
+    font-size: 19px;
+}
+
+#time>#timebox>#timebox4{
+    color: teal;
+}
+#time>#timebox>#timebox4:hover{
+    text-decoration: underline;
+}
+#time>#timebox>#timebox5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#time>#timebox>#timebox5>.b1{
+    display: grid;
+    grid-template-columns:20% 80%;
+    gap:10px;
+}
+
+#time>#time_img>div>img{
+    /* border:1px solid blue; */
+    width:100%
+}
+
+#sign{
+    /* border:1px solid red; */
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:blanchedalmond;
+}
+#sign>div>h1{
+   font-size: 35px;
+}
+#sign>#part{
+    /* border:1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 80px;
+}
+#sign>#part>img{
+    /* border:1px solid blue; */
+    margin-left: 350px;
+    height:45px;  
+}
+#sign>#part>div{
+    /* border:1px solid green; */
+    text-align: left;
+    margin-left: 80px;
+}
+
+#talent{
+    /* border:1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+#talent>#talbox>#talbox1{
+    color:red;
+    font-size: 19px;
+}
+#talent>#talbox>#talbox2{
+    font-size: 22px;
+}
+#talent>#talbox>#talbox3{
+    font-size: 19px;
+}
+#talent>#talbox>#talbox4{
+    color:teal;
+    font-size: 19px;
+}
+#talent>#talbox>#talbox4:hover{
+    text-decoration: underline;
+}
+#talent>#talbox>#talbox5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border:1px solid red; */
+}
+#talent>#talbox>#talbox5>.b1{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+#talent>#tal_img>div>img{
+    width:80%;
+}
+
+#integration{
+    /* border:1px solid red; */
+    background-color: blanchedalmond;
+    margin-top: 100px;
+    text-align: center;
+}
+#integration>#int1{
+    padding-top: 30px;
+    color:red;
+    font-size: 19px;
+}
+
+#integration>#int2{
+    font-size: 22px;
+}
+#integration>#int3{
+    font-size: 19px;
+}
+#integration>#int4{
+    font-size: 19px;
+    color:teal;
+}
+#integration>#int4:hover{
+    text-decoration: underline;
+}
+#integration>#int5>img{
+    width:60%;
+}
+
+#dedicate{
+    /* border:1px solid red; */
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#dedicate>div>h1{
+    font-size: 50px;
+}
+#dedicate>div>p{
+    font-size: 19px;
+}
+#end{
+    text-align: center;
+    border:1px solid red;
+    background-color: red;
+}
+#end>div>h1{
+    color:white;
+    font-size: 45px;
+    margin-top: 50px;
+}
+#end>button{
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    border:1px solid red;
+    margin-bottom: 50px;
+}
+#end>button>a{
+    color:black;
+    text-decoration: none;
+    
+}
