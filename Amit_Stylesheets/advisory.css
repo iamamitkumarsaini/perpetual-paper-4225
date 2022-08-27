@@ -788,7 +788,7 @@ margin-left: 3%;
         display: block;
         width: 65%;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     
     #eighthBox2Inner1{
@@ -1151,7 +1151,7 @@ margin-left: 3%;
 
 
     #eighthBox1{
-        width: 87%;
+        width: 82%;
         margin: auto;
         margin-top: 80px;
         margin-bottom: 30px;
@@ -1162,20 +1162,23 @@ margin-left: 3%;
     }
     
     #eighthBox2{
-        display: block;
+        display: flex;
         width: 65%;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
     
     #eighthBox2Inner1{
         width: 100%;
        border: none;
+       border-top: 1px solid white;
+       border-right: 1px solid white;
         border-bottom: 1px solid white;
         height: 50px;
     }
     
     #eighthBox2Inner1>img{
+        margin-top: 7px;
         margin-left: 15px;
     }
     
@@ -1183,8 +1186,9 @@ margin-left: 3%;
         font-size: 14px;
         width: 100%;
         height: 50px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
         color: white;
-        border: none;
     }
 
     #ninthBox{
@@ -1258,3 +1262,487 @@ margin-left: 3%;
 }
 
 
+
+
+
+@media all and (min-width:769px) and (max-width:990px){
+
+
+    #firstBox1{
+        width: 87%;
+        margin: auto;
+        margin-top: 90px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #firstBox1>h1{
+        font-size: 2.7rem;
+        line-height: 2.9rem;
+        margin-bottom: 20px;
+    }
+    
+    #firstBox1>p{ 
+        margin-bottom: 20px;
+    }
+    
+    #firstBoxBtn{
+        
+        padding: 12px 22px;
+        margin: auto;
+    }
+
+    #secondBox{
+        margin-bottom: 50px;
+    }
+
+    #thirdBox{
+        display: flex;
+        border: 1px solid #0A8080;
+        margin-bottom: 60px;
+    }
+    
+    #thirdBox1{
+        width: 87%;
+        margin: auto;
+    }
+    
+    #thirdBox1>h3{
+        font-size: 1.4rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .thirdBox1Inner{
+        display: flex;
+    }
+    
+    .thirdBox1Inner>p{
+        margin-bottom: 30px;
+        font-size: 18px;
+        letter-spacing: 0px;
+        margin-right: 10px;
+    }
+
+    .thirdBox1Inner>img{
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    
+    #thirdBox2{
+        width: 82%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    #thirdBox2>h3{
+        font-size: 1.4rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .thirdBox2Inner{
+        display: flex;
+    }
+    
+    .thirdBox2Inner>p{
+        color: white;
+            margin-bottom: 30px;
+            font-size: 18px;
+            letter-spacing: 0px;
+            margin-right: 10px;
+        
+    }
+
+    #fourthBox1{
+        width: 50px;
+        margin: auto;
+
+    }
+    
+    #fourthBox1>img{
+        width: 100%;
+    }
+    
+    #fourthBox2{
+        width: 77%;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    
+    #fourthBox2>h2{
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+
+
+    #fifthBox{
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+    
+    #fifthBox1{
+        width: 87%;
+        margin: auto;
+    }
+    
+    #fifthBox1>iframe{
+        width: 100%;
+        height: 290px;
+        margin-bottom: 80px;
+    }
+    
+    #fifthBox2{
+        width: 87%;
+        margin: auto;
+    }
+    
+    #fifthBox2>p{
+        margin: auto;
+        margin-left: 35px;
+    }
+    
+    #fifthBox2>p:nth-child(2){
+        margin-top: 24px;
+    }
+    
+    .fifthBox2InnerAll{
+        display: flex;
+        margin-top:35px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+    }
+    
+    .fifthBox2InnerAll>p{
+        margin-top: -8px;
+    }
+
+    .fifthBox2InnerAll{
+        display: flex;
+    }
+
+    .fifthBox2InnerAll>img{
+        width: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #sixthBox{
+        display: block;
+    }
+    
+    #sixthBox1{
+        width: 87%;
+        margin: auto;
+    }
+    
+    #sixthBox1>p:first-child{
+        margin: auto;
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+    
+    #sixthBox1>h3{
+        font-size: 1.7rem;
+        margin: auto;
+        margin-left: 15px;
+    }
+    
+    #sixthBox1>p:nth-child(3){
+        margin: 30px;
+        margin-left: 15px;
+    }
+    
+    #sixthBox2{
+        width: 82%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    
+    #sixthBox2>img{
+        width: 100%;
+    }
+
+
+    #seventhBox{
+        display: block;
+    }
+    
+    #seventhBox1{
+        width: 87%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    #seventhBox1>img{
+        width: 100%;
+    }
+    
+    #seventhBox2{
+        width: 87%;
+       margin: auto;
+       margin-bottom: 50px;
+    }
+    
+    #seventhBox2>p:first-child{
+       margin-left: 0px;
+    }
+    
+    #seventhBox2>h3{
+        font-size: 1.6rem;
+        margin-right: 30px;
+        line-height: 2.1rem;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    
+    #seventhBox2>p:nth-child(3){
+        line-height: 23px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+
+    #eighthBox1{
+        width: 82%;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    #eighthBox1>h3{
+        font-size: 1.5rem;
+    }
+    
+    #eighthBox2{
+        display: flex;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+    
+    #eighthBox2Inner1{
+        width: 100%;
+       border: none;
+       border-top: 1px solid white;
+       border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        height: 50px;
+    }
+    
+    #eighthBox2Inner1>img{
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+    
+    #eighthBox2Inner2{
+        font-size: 14px;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        color: white;
+    }
+
+    #ninthBox{
+        background-color: #F8F5F2;
+        border: 1px solid #F8F5F2;
+    }
+    
+    #ninthBox1{
+        width: 87%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    #ninthBox1>h2{
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    
+    #ninthBox2{
+        display: flex;
+        width: 87%;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
+
+    #tenthBox{
+    }
+    
+    #tenthBox1{
+        width: 78%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    #tenthBox1>h2{
+        font-size: 2.3rem;
+        text-align: center;
+        line-height: 2.7rem;
+        margin-bottom: 25px;
+    }
+    
+    #tenthBox1>p{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    
+    #tenthBoxBtn{
+       margin: auto;
+        border: none;
+        padding: 12px 24px;
+    }
+    
+    #eleventhBox{
+        background-color: #f8f5f2;
+        margin-bottom: 50px;
+        margin-top: 70px;
+    
+    }
+    
+    #eleventhBox>p{
+        text-align: center;
+        padding: 18px;
+        color: #6c6c72;
+        line-height: 23px;
+    }
+}
+
+
+
+
+@media all and (min-width:991px) and (max-width:1100px){
+
+    #firstBox1{
+        width: 87%;
+        margin: auto;
+        margin-top: 90px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #firstBox1>h1{
+        font-size: 2.7rem;
+        line-height: 2.9rem;
+        margin-bottom: 20px;
+    }
+    
+    #firstBox1>p{ 
+        margin-bottom: 20px;
+    }
+    
+    #firstBoxBtn{
+        
+        padding: 12px 22px;
+        margin: auto;
+    }
+
+    #fourthBox1{
+        width: 50px;
+        margin: auto;
+        margin-top: 50px;
+
+    }
+    
+    #fourthBox1>img{
+        width: 100%;
+    }
+    
+    #fourthBox2{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    
+    #fourthBox2>h2{
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 2.9rem;
+    }
+
+    #eighthBox1{
+        width: 50%;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    #eighthBox1>h3{
+        font-size: 1.7rem;
+    }
+    
+    #eighthBox2{
+        display: flex;
+        width: 45%;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+
+    #ninthBox{
+        background-color: #F8F5F2;
+        border: 1px solid #F8F5F2;
+    }
+    
+    #ninthBox1{
+        width: 65%;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    #tenthBox1{
+        width: 55%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    #tenthBox1>h2{
+        font-size: 2.3rem;
+        text-align: center;
+        line-height: 2.7rem;
+        margin-bottom: 25px;
+    }
+    
+    #tenthBox1>p{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    
+    #tenthBoxBtn{
+       margin: auto;
+        border: none;
+        padding: 12px 24px;
+    }
+
+    #eleventhBox{
+        background-color: #f8f5f2;
+        margin-bottom: 50px;
+        margin-top: 70px;
+    
+    }
+    
+    #eleventhBox>p{
+        text-align: center;
+        padding: 18px;
+        color: #6c6c72;
+        line-height: 23px;
+    }
+
+}
