@@ -12,7 +12,7 @@ let input=document.getElementById("shiv_password");
         document.getElementById("hide").style.display="none";
         document.getElementById("show").style.display="block";
     }
-    let userDataArr=JSON.parse(localStorage.getItem("userData"))|[];
+    let userDataArr=JSON.parse(localStorage.getItem("userData"))||[];
     let signIn = ()=>{
         let email=document.getElementById("shiv_email").value;
         let password=document.getElementById("shiv_password").value;
