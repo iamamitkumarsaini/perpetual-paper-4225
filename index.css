@@ -1064,6 +1064,7 @@ width: 45%;
     background-color: #ffffff;
     border: 2px solid black;
 
+
 }
 
 #footer-head{
@@ -1111,3 +1112,71 @@ width: 45%;
     transition: all 0.3s ease-in-out;
 
 }
+
+
+#footer-second-div{
+
+    width: 90%;
+    height: auto;
+    border: 2px solid red;
+    margin-left: 50px;
+    display: flex;
+    font-family: 'centra_no2book';
+
+    
+
+}
+
+#footer-second-div>div{
+
+    width: 25%;
+    height: auto;
+    border: 2px solid blue;
+
+
+}
+
+#footer-second-div>div h4{
+
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5%;
+
+}
+
+#footer-second-div>div p{
+
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(194, 192, 192);
+    margin-bottom: 5%;
+
+}
+
+#footer-second-div>div:nth-child(1)>div{
+
+    margin-bottom: 10%;
+
+}
+
+#footer-second-div>div:nth-child(2)>div{
+
+    margin-bottom: 10%;
+
+
+}
+
+#footer-second-div>div:nth-child(3)>div{
+
+    margin-bottom: 10%;
+
+
+}
+
+#footer-second-div>div:nth-child(4)>div{
+
+    margin-bottom: 10%;
+
+
+}
+
