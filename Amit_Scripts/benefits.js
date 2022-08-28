@@ -420,7 +420,7 @@ let showAnswer2 = () => {
         flag2 = true;
 
         itag2.style.transform = "rotate(90deg)";
-        itag1.style.transition = "all 0.3s ease-in-out";
+        itag2.style.transition = "all 0.3s ease-in-out";
 
          flag1 = false;
          flag3 = false;
@@ -455,7 +455,7 @@ let showAnswer3 = () => {
         flag3 = true;
 
         itag3.style.transform = "rotate(90deg)";
-        itag1.style.transition = "all 0.3s ease-in-out";
+        itag3.style.transition = "all 0.3s ease-in-out";
 
         flag1 = false;
          flag2 = false;
@@ -489,7 +489,7 @@ let showAnswer4 = () => {
         flag4 = true;
 
         itag4.style.transform = "rotate(90deg)";
-        itag1.style.transition = "all 0.3s ease-in-out";
+        itag4.style.transition = "all 0.3s ease-in-out";
 
         flag1 = false;
          flag2 = false;
