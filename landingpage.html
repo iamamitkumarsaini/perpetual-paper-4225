@@ -328,16 +328,17 @@ align-items: center;
   border:1px solid #2babad;
   background-color: rgba(0, 136, 255, 0.035);
 }
-    #profile_box{
+     #profile_box{
     width: 308px;
+    padding-top: 10px;
     height: 140px;
    background-color: rgb(255,255,255);
     position: absolute;
     display: none;
    right: 20px;
     z-index: 10;
-    
-    top:70px;
+    left: 20px;
+    top:-10px;
     box-shadow: 0 1px 4px rgb(28 28 28 / 10%), 0 4px 6px rgb(28 28 28 / 4%), 0 8px 16px rgb(28 28 28 / 4%), 0 10px 20px 2px rgb(28 28 28 / 2%), 0 12px 24px 4px rgb(28 28 28 / 4%)
   ; 
   
@@ -369,6 +370,9 @@ background-color: #0a8080;
 }
 #profile_box>div>p{
 margin-left: 30px;
+} 
+#land_user_name{
+    width: 50px;
 }
 
 #page2_a{
@@ -414,6 +418,21 @@ margin-left: 10px;
 }#profile{
     display: none;
 }
+#login_name{
+    width: 30%;
+    height: 80%;
+    
+    
+}#land_user_name{
+    display: flex;
+/* justify-content: space-between; */
+width:100%;
+    height: 80%;
+   
+    justify-content: space-between;
+}#login_name{
+   
+}
     </style>
 </head>
 <body>
@@ -425,16 +444,26 @@ margin-left: 10px;
             <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="">
         </div>
         <div id="login_name">
-         <div id="land_user_name"></div>
-           <button  id="profile_icone" onclick="land_profile()">
-           <H1 class="roted"><</H1>
-        </button>
-<div id="profile_box">
+         <div id="land_user_name">
+        <div id="land_name"> <p>kanhaiya tiwari</p>
+        <p>compayg</p>
+
+        </div>
+        <div id="land_button">
+            <button  id="profile_icone" onmouseleave="land_profile()" onmouseenter="remove1()">
+            <H1 class="roted"><</H1>
+         </button>
+     </div>
+         </div>
+        
+      <div id="profile_box"> 
     <div onclick="addcompany()">  <p>Add company</p></div>
     <div onclick="mypro()"><p>My profile</p></div>
     <div onclick="signout()"><p>Sign out</p> </div>
-</div>
+</div>   
+  
         </div>
+       
     </div>
     <div id="landpage_container">
         <div id="lef_tsite">
@@ -780,6 +809,9 @@ margin-left: 10px;
     }
    function land_profile(){
     document.getElementById("profile_box").style.display="block"
+   }
+   function remove1(){
+    document.getElementById("profile_box").style.display="none"
    }
  
    function home(){
