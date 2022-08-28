@@ -23,12 +23,11 @@ p,a,li,strong{
     top: 0;
     z-index: 4;
     background-color: white;
-    
 }
 
 #mod_ben{
     display: flex;
-    height: 78vh;
+    height: 71.5vh;
     width: 100%;
 }
 
@@ -148,7 +147,7 @@ p,a,li,strong{
     margin: auto;
     display: flex;
     border-radius: 20px;
-    height: 72vh;
+    height: 66vh;
     margin-bottom: 12px;
 }
 
@@ -551,7 +550,7 @@ p,a,li,strong{
     border-radius: 20px;
     margin-left: 9%;
     margin-top: -8.4%;
-    height: 58vh;
+    height: 53vh;
     margin-bottom: 12px;
 }
 
@@ -600,7 +599,7 @@ p,a,li,strong{
     border-radius: 20px;
     margin-left: 9%;
     margin-top: -8.4%;
-    height: 58vh;
+    height: 53vh;
     color: white;
     background-color: #0A8080;
     margin-bottom: 12px;
@@ -791,7 +790,7 @@ p,a,li,strong{
     border-radius: 20px;
     margin-left: 9%;
     margin-bottom: 12px;
-    margin-top: -7%;
+    margin-top: -8.8%;
 }
 
 #maindiv10>h4{
@@ -1349,12 +1348,12 @@ p,a,li,strong{
     justify-content: space-between;
 }
 
-#frequently_asked>.ques1>h3{
+#frequently_asked>.ques1>p{
     font-size: 1.5rem;
     margin-top: 7.2%;
     margin-bottom: 20px;
-    /* font-family: "clearfacebold";
-    font-weight: bold; */
+    font-family: "clearfacebold";
+    font-weight: bold;
 }
 
 #frequently_asked>.ques1>span{
@@ -1407,6 +1406,10 @@ p,a,li,strong{
     border: none;
     outline: none;
     border-radius: 6px;
+}
+
+#workingdivBtn:hover{
+    cursor: pointer;
 }
 
 #nocost_container{

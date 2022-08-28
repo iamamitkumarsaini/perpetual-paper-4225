@@ -387,6 +387,7 @@ let showAnswer1 = () => {
         flag1 = true;
 
         itag1.style.transform = "rotate(90deg)"
+        itag1.style.transition = "all 0.3s ease-in-out";
 
          flag2 = false;
          flag3 = false;
@@ -418,7 +419,8 @@ let showAnswer2 = () => {
         answer2.style.display = "block";
         flag2 = true;
 
-        itag2.style.transform = "rotate(90deg)"
+        itag2.style.transform = "rotate(90deg)";
+        itag1.style.transition = "all 0.3s ease-in-out";
 
          flag1 = false;
          flag3 = false;
@@ -452,7 +454,8 @@ let showAnswer3 = () => {
         answer3.style.display = "block";
         flag3 = true;
 
-        itag3.style.transform = "rotate(90deg)"
+        itag3.style.transform = "rotate(90deg)";
+        itag1.style.transition = "all 0.3s ease-in-out";
 
         flag1 = false;
          flag2 = false;
@@ -485,7 +488,8 @@ let showAnswer4 = () => {
         answer4.style.display = "block";
         flag4 = true;
 
-        itag4.style.transform = "rotate(90deg)"
+        itag4.style.transform = "rotate(90deg)";
+        itag1.style.transition = "all 0.3s ease-in-out";
 
         flag1 = false;
          flag2 = false;
@@ -508,3 +512,28 @@ let showAnswer4 = () => {
 }
 
 question4.addEventListener("click",showAnswer4);
+
+
+
+let imgArr = [
+    "https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/TheSaltyDonut_Miami_FL-7c502c2e168a61a54c66514ea204ab8df694e797039f1b894f474ab7b0cb255e.jpg",
+    "https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/dwg_Austin_TX-313e126a43d478165cb79b00a5f6cf69456252645e24b65acf2fc37bc7588263.jpg",
+    "https://prod.gusto-assets.com/assets/product/benefits/benefits_hub/Handlebar_Cyclery_Austin_TX-dbdd43719bd45f78906712080e02af6368e428308c9e610e2755469d7aaca509.jpg"
+
+];
+
+let count=0;
+
+function slideImg (){
+
+    let changeImage = document.getElementById("changeImage");
+    changeImage.src = imgArr[count%imgArr.length]
+    count++
+    console.log(count,count%imgArr.length)
+
+    let changeDiv = document.getElementById("img_ben")
+
+    changeDiv.style.animation =  "fadeIn 5s";
+}
+
+setInterval (slideImg,3000)

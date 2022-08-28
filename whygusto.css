@@ -1,5 +1,14 @@
 /* Upper portion */
-
+h1,h2,h3,h4,h5,h6{
+    font-family: 'clearfacebold';
+    font-weight: normal;
+    font-style: normal;
+}
+p,a{
+    font-family: 'centra_no2book';
+    font-weight: normal;
+    font-style: normal;
+}
 #upper_box{
     display:flex;
     /* border:1px solid red; */
@@ -23,7 +32,7 @@
     color:red;
 }
 #upper_box>#box>#box2{
-    font-size: 22px;
+    font-size: 20px;
 }
 #upper_box>#box>#btn{
     background-color: red;
@@ -54,7 +63,7 @@
     margin-bottom: 30px;
 }
 #mid_box>#mid_box1{
-   font-size:25px;
+   font-size:20px;
 }
 #mid_box>#mid_box2{
     font-size: 19px;
@@ -91,7 +100,7 @@
     margin-top: 90px;
 }
 #container>button{
-    color:white;
+    
     background-color: red;
     border:1px solid red;
     width:150px;
@@ -99,6 +108,11 @@
     border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 50px
+}
+
+#container>button>a{
+    color:white;
+    text-decoration: none;
 }
 
 /* link pages */

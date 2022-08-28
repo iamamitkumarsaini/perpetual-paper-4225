@@ -8,115 +8,8 @@
     <title>Thank you page</title>
     <link rel="stylesheet" href="Webkit Clearfacebold Fonts/stylesheet.css">
     <link rel="stylesheet" href="webfontkit GCentra/stylesheet.css">
-    <style>
-        #shiv_navbar {
-            width: 100%;
-            height: 75px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 100px;
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-        }
-
-        #shiv_navbar>img {
-            margin: 20px;
-            width: 100px;
-        }
-
-        #shiv_navbar>p {
-            margin-right: 30px;
-        }
-
-        span {
-            color: teal;
-        }
-
-        h1 {
-            font-family: clearfacebold;
-            color: #222525;
-            font-size: 40px;
-        }
-
-        p,button,select,option {
-            font-family: centra_no2book;
-            color: #222525;
-            font-size: 18px;
-        }
-
-        #shiv_middle {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #shiv_middle_left {
-            width: 40%;
-            margin: 50px;
-            line-height: 25px;
-        }
-        #shiv_middle_left>div:first-child>img{
-            width: 10%;
-        }
-        #shiv_middle_left>div:nth-child(2){
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        #shiv_middle_left>div:nth-child(3){
-            width: 80%;
-        }
-        #shiv_middle_left>div:nth-child(4){
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        #shiv_middle_left>div:nth-child(4)>button{
-            padding: 15px 40px;
-            color: white;
-            background-color: #ef523c;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #shiv_middle_left>div:nth-child(4)>button:hover{
-            padding: 15px 40px;
-            color: white;
-            background-color: #f45d48;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #shiv_middle_left>div:nth-child(5)>button{
-            padding: 15px 25px;
-            color: white;
-            background-color: #ef523c;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #shiv_middle_left>div:nth-child(5)>button:hover{
-            padding: 15px 25px;
-            color: white;
-            background-color: #f45d48;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #shiv_middle_right {
-            width: 45%;
-            margin-right: -10px;
-        }
-
-        #shiv_middle_right>img {
-            width: 100%;
-        }
-        select{
-            width: 80%;
-            padding: 15px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="thankyouPage.css">
 </head>
-
 <body>
     <div id="shiv_navbar">
         <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg"
@@ -139,21 +32,32 @@
                 <button><b>Check your Gmail box</b></button>
                 <p>Questions? <span>Contact us</span></p>
             </div>
-            <div>
+            <div id="jkl">
                 <p><b>How did you hear about us?</b></p>
                 <select id="">
                     <option value="">Select an option</option>
-                    <option value=""></option>
+                    <option value="Gusto's website or social media">Gusto's website or social media</option>
+                    <option value="Press or news about Gusto">Press or news about Gusto</option>
+                    <option value="Gusto reviews or review websites">Gusto reviews or review websites</option>
+                    <option value="Podcast">Podcast</option>
+                    <option value="Friend, family, or colleague recommendation">Friend, family, or colleague recommendation</option>
+                    <option value="Billboard or other out of home ads">Billboard or other out of home ads</option>
+                    <option value="Radio or streaming audio ads (e.g. Spotify)">Radio or streaming audio ads (e.g. Spotify)</option>
+                    <option value="Google or other online search">Google or other online search</option>
+                    <option value="TV or streaming service (e.g. Hulu)">TV or streaming service (e.g. Hulu)</option>
+                    <option value="Social media ads (e.g. Facebook)">Social media ads (e.g. Facebook)</option>
+                    <option value="Other advertising">Other advertising</option>
                 </select>
                 <br>
                 <br>
-                <button><b>Submit</b></button>
+                <button onclick="finalSubmit()"><b>Submit</b></button>
             </div>
+            <p id="xyz"><b>Thanks!</b> We've heard good things about you too.</p>
         </div>
         <div id="shiv_middle_right"><img
                 src="https://prod.gusto-assets.com/assets/pending/gusto-email-verification@2x-829d274e7ee3081c9c3bac42fdb7f4586e1fee560bc3fb150a8bab2d3128b2b6.png.webp"
                 alt="image"></div>
     </div>
 </body>
-
 </html>
+<script src="thankyouPage.js"></script>
