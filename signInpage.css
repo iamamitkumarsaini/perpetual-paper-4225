@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
 }
 #shiv_container{
-    width: 30%;
+    width: 375px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ input[type="checkbox"]{
     height: 20px;
     margin: 4px 10px 0px 0px;
 }
-#shiv_container>p:nth-child(9){
+#shiv_container>p:nth-child(11){
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -129,7 +129,7 @@ a:hover{
 #or{
     text-align: center;
 }
-#shiv_container>div:nth-child(13){
+#shiv_container>div:nth-child(15){
     display: flex;
     margin-bottom: 20px;
 }
@@ -143,6 +143,22 @@ a:hover{
 }
 button{
     cursor: pointer;
+}
+u{
+    color: teal;
+    font-family: centra_no2book;
+}
+u:hover{
+    color: rgb(0, 95, 95);
+    cursor: pointer;
+}
+small {
+    font-family: centra_no2book;
+    margin-top: 2%;
+    color: #d5351f;
+}
+#empty_password{
+    margin-top: 5%;
 }
 #show{
     margin-left: 85%;
