@@ -328,16 +328,17 @@ align-items: center;
   border:1px solid #2babad;
   background-color: rgba(0, 136, 255, 0.035);
 }
-    #profile_box{
+     #profile_box{
     width: 308px;
+    padding-top: 10px;
     height: 140px;
    background-color: rgb(255,255,255);
     position: absolute;
     display: none;
    right: 20px;
     z-index: 10;
-    
-    top:70px;
+    left: 20px;
+    top:-10px;
     box-shadow: 0 1px 4px rgb(28 28 28 / 10%), 0 4px 6px rgb(28 28 28 / 4%), 0 8px 16px rgb(28 28 28 / 4%), 0 10px 20px 2px rgb(28 28 28 / 2%), 0 12px 24px 4px rgb(28 28 28 / 4%)
   ; 
   
@@ -355,12 +356,26 @@ align-items: center;
     background: rgb(255,255,255);
     color: #525257;
     position: relative;
-    padding-top: 10px;
+   
 }#profile_box>div{
-    margin-top: 20px;
-    margin-left: 20px;
-    
-}#page2_a{
+    margin-top: 0px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: -10px;
+   
+}#profile_box>div:hover{
+background-color: #0a8080;
+
+}
+#profile_box>div>p{
+margin-left: 30px;
+} 
+#land_user_name{
+    width: 50px;
+}
+
+#page2_a{
     color: #0a8080;
     font-weight: 500;
     text-decoration: underline;
@@ -397,6 +412,26 @@ margin-left: 10px;
     display: flex;
 }#state_info{
    
+}.roted{
+    transform: rotate(271deg);
+    color: #0a8080;
+}#profile{
+    display: none;
+}
+#login_name{
+    width: 30%;
+    height: 80%;
+    
+    
+}#land_user_name{
+    display: flex;
+/* justify-content: space-between; */
+width:100%;
+    height: 80%;
+   
+    justify-content: space-between;
+}#login_name{
+   
 }
     </style>
 </head>
@@ -409,16 +444,26 @@ margin-left: 10px;
             <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="">
         </div>
         <div id="login_name">
-         <div id="land_user_name"></div>
-           <button  id="profile_icone" onmouseleave="setout()"  onmouseenter="land_profile()">
-            <i style="font-size:24px" class="fa">&#xf107;</i>
-        </button>
-<div id="profile_box">
-    <div onclick="addcompany()">  <p>Add company</p></div>
-    <div onclick="mypro()">My profile</div>
-    <div onclick="signout()"> Sign out</div>
-</div>
+         <div id="land_user_name">
+        <div id="land_name"> <p>kanhaiya tiwari</p>
+        <p>compayg</p>
+
         </div>
+        <div id="land_button">
+            <button  id="profile_icone" onmouseleave="land_profile()" onmouseenter="remove1()">
+            <H1 class="roted"><</H1>
+         </button>
+     </div>
+         </div>
+        
+      <div id="profile_box"> 
+    <div onclick="addcompany()">  <p>Add company</p></div>
+    <div onclick="mypro()"><p>My profile</p></div>
+    <div onclick="signout()"><p>Sign out</p> </div>
+</div>   
+  
+        </div>
+       
     </div>
     <div id="landpage_container">
         <div id="lef_tsite">
@@ -427,7 +472,7 @@ margin-left: 10px;
                 <button class="explor" onclick="explor()">Explore Gusto ></button>
             </div>
             <div id="ex_img">
-                <img src="gusto_lnd.jpg" alt="">
+                <img src="land_gusto.jpg" alt="">
                
             </div>
             <div id="landing_start">
@@ -728,6 +773,19 @@ margin-left: 10px;
 </div>
 </div>
 
+<div id="profile">
+    <div id="navbar">
+      <div>  <h1> Setting</h1></div>
+       <button> My profile </button>
+       <button> Preference</button>
+       <button>Permissions</button>
+       <button> Plan & billing</button>
+     
+    </div>
+    <div id="mainprofile">
+        
+    </div>
+</div>
 
 </div>
 
@@ -739,6 +797,7 @@ margin-left: 10px;
     </body>
 </html>
 <script>
+    
     function explor(){
         document.getElementById("left_container1").style.display="none"
         document.getElementById("left_container2").style.display="block"
@@ -751,21 +810,23 @@ margin-left: 10px;
    function land_profile(){
     document.getElementById("profile_box").style.display="block"
    }
-  function setout(){
+   function remove1(){
     document.getElementById("profile_box").style.display="none"
-  }
+   }
+ 
    function home(){
     document.getElementById("land_account").style.display="block"
     document.getElementById("employ_dtail").style.display="none"
     document.getElementById("fedral_info").style.display="none"
     document.getElementById("state_info").style.display="none"
     document.getElementById("com_adress").style.display="none"
+    
    }
-
+  
    function ad_ac(){
     //color
     
-console.log("helo")
+    document.getElementById("page2").style.color="#1c1c1c"
 //functio
     document.getElementById("land_account").style.display="block"
     document.getElementById("employ_dtail").style.display="none"
@@ -780,7 +841,7 @@ console.log("helo")
    }
 
    //function ad_ac(){
-    // document.getElementById("page2").style.color="#1c1c1c"
+    //  document.getElementById("page2").style.color="#1c1c1c"
     // document.getElementById("page3").style.color="#6c6c72"
     // document.getElementById("page4").style.color="#6c6c72"
     // document.getElementById("pag5").style.color="#6c6c72"
@@ -791,7 +852,7 @@ console.log("helo")
   function ad_fed(){
     //color
     
-
+    
 //function 
     document.getElementById("land_account").style.display="none"
     document.getElementById("employ_dtail").style.display="none"

@@ -17,6 +17,9 @@ let input=document.getElementById("shiv_password");
             input.type="text";
         }
     }
+    
+    let userDataArr=JSON.parse(localStorage.getItem("userData"))||[];
+    
 
 
 
