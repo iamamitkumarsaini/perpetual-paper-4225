@@ -11,8 +11,17 @@ let input=document.getElementById("shiv_password");
     let hide=()=>{
         document.getElementById("hide").style.display="none";
         document.getElementById("show").style.display="block";
+        if(input.type=="text"){
+            input.type="password";
+        }else{
+            input.type="text";
+        }
     }
-    let userDataArr=JSON.parse(localStorage.getItem("userData"))|[];
+
+
+
+    let userDataArr=JSON.parse(localStorage.getItem("userData"))||[];
+    console.log(userDataArr);
     let signIn = ()=>{
         let email=document.getElementById("shiv_email").value;
         let password=document.getElementById("shiv_password").value;
@@ -20,28 +29,32 @@ let input=document.getElementById("shiv_password");
             email,password
         }
        
-        let flag;
+        let verifiedData=[];
+        let flag=true;
         userDataArr.forEach((ele)=>{
-            if(getDataObj.email!=ele.email && getDataObj.password!=ele.password){
-                alert("User doesn't exist")
+            if(getDataObj.email==""||(getDataObj.email!=ele.email)){
                 flag=false;
-                return;
-            }else if(getDataObj.password!=ele.password){
-                alert("Please enter a valid password")
+                document.getElementById("empty_email").textContent="Correct Email Address is required";
+            }else{
+                document.getElementById("empty_email").textContent=null;
+            }
+            
+            if(getDataObj.password==""||(getDataObj.password!=ele.password)){
                 flag=false;
-                return;
-            }else if(getDataObj.email!=ele.email){
-                alert("User doesn't exist")
-                flag=false;
+                document.getElementById("empty_password").textContent="A valid password is required"
                 return;
             }else{
-                flag=true;
+                document.getElementById("empty_password").textContent=null;
+            }
+            if(getDataObj.email==ele.email && getDataObj.password==ele.password){
+                verifiedData.push(ele);
+                return;
             }
         })
 
         if(flag==true){
-            alert("Sign In successfull");
-            localStorage.setItem("verify_details",JSON.stringify(getDataObj));
+            localStorage.setItem("verified_details",JSON.stringify(verifiedData));
+            window.location.href="landingpage.html";
         }
     }
 
@@ -56,3 +69,15 @@ let input=document.getElementById("shiv_password");
     document.getElementById("intuit").addEventListener("click",function myDATA(){
         window.location.href="https://accounts.intuit.com/index.html?redirect_url=https%3A%2F%2Fappcenter.intuit.com%2Fapp%2Fconnect%2Foauth2%3Fclient_id%3DQ0XdwplasCYkpZJkubLKQAhiPlQkauhvFEr4SSAq3dA2sK6rUL%26nonce%3Db4ae7fdd8df4fb20845958da43c071b424f26da806695860%26redirect_uri%3Dhttps%253A%252F%252Fapp.gusto.com%252Fuser%252Fauth%252Fintuit%252Fcallback%26response_mode%3Dform_post%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520email%26state%3Dcb70a56a4899f86b2087457c084a9b8f88b97de609763a19&offering_id=Intuit.sbg-fms.ippdevx&partner_uid_button=google&appfabric=true";
     })
+
+    let qwe=()=>{
+        window.location.href="signUpPage.html";
+    }
+
+    let qw=()=>{
+        window.location.href="signUpPage.html";
+    }
+
+    let qwer=()=>{
+        window.location.href="index.html";
+    }
