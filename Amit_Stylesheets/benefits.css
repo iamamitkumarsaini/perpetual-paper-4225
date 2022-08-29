@@ -13,17 +13,6 @@ p,a,li,strong{
     font-family: 'centra_no2book';
 }
 
-#navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid red;
-    height: 75px;
-    position: sticky;
-    top: 0;
-    z-index: 4;
-    background-color: white;
-}
 
 #mod_ben{
     display: flex;
