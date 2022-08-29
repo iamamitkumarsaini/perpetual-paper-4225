@@ -7,17 +7,14 @@
     <title>Employee Benefits</title>
     <link rel = "icon" href = "https://assets.website-files.com/5ec8332c2b50b6c3e1066975/5faab68f76cd80e95095cca9_Gusto%20g%20copy.png" type = "image/x-icon">
     <link rel="stylesheet" href="./Amit_Stylesheets/benefits.css">
-    <link rel="stylesheet" href="./Amit_Stylesheets/style.css">
     <link rel="stylesheet" href="./webfontkit GCentra/stylesheet.css">
     <link rel="stylesheet" href="./Webkit Clearfacebold Fonts/stylesheet.css">
+    <link rel="stylesheet" href="navbar&footer.css">
+    <link rel="stylesheet" href="./Amit_Stylesheets/style.css">
     <script src="https://kit.fontawesome.com/97af42fa79.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar">
-        <a href="">Home</a>
-        <a href="">Home</a>
-        <a href="">Home</a>
-    </div>
+    <div id="navbar"></div>
 
 
     <div id="mod_ben">     
@@ -603,15 +600,19 @@
     </div>
 
 
-    <div id="workingWithGusto">
-
-        <div id="workingDiv1">
-            <h2>Get your team
-                working with Gusto.</h2>
-                <button type="submit" id="workingdivBtn">Create account</button>
-        </div>
-    </div>
+    <div id="footer"></div>
 </body>
 
-<script src="./Amit_Scripts/benefits.js"></script>
+
 </html>
+<script type="module">
+
+    import {navbar, footer} from "./components/navbar&footer.js";
+    
+     document.getElementById("navbar").innerHTML = navbar();
+    
+    document.getElementById("footer").innerHTML = footer ();
+    </script>
+
+
+<script src="./Amit_Scripts/benefits.js"></script>
