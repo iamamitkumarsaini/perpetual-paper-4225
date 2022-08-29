@@ -14,19 +14,6 @@ p,a,li,strong{
     color: #222525;
 }
 
-#navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid red;
-    height: 75px;
-    position: sticky;
-    top: 0;
-    z-index: 4;
-    background-color: white;
-    
-}
-
 #firstBox1{
     width: 62%;
     margin: auto;
