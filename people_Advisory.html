@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="./Amit_Stylesheets/advisory.css">
     <link rel="stylesheet" href="./webfontkit GCentra/stylesheet.css">
     <link rel="stylesheet" href="./Webkit Clearfacebold Fonts/stylesheet.css">
+    <link rel="stylesheet" href="navbar&footer.css">
     <script src="https://kit.fontawesome.com/97af42fa79.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar">
-        <a href="">Home</a>
-        <a href="">Home</a>
-        <a href="">Home</a>
-    </div>
+         <div id="navbar"></div>
 
     <div id="firstBox">
 
@@ -215,5 +212,18 @@
     <div id="eleventhBox">
         <p>Your firm will get a free Complete Plan as long as you onboard one client to Gusto each year.</p>
     </div>
+
+    <div id="footer"></div>
 </body>
 </html>
+
+<script type="module">
+
+import {navbar, footer} from "./components/navbar&footer.js";
+
+ document.getElementById("navbar").innerHTML = navbar();
+
+document.getElementById("footer").innerHTML = footer ();
+
+document.getElementById("footer-head").style.display = "none";
+</script>

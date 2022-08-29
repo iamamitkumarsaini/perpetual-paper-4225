@@ -32,7 +32,7 @@ function shiv_btn7() {
     document.getElementById("shiv_container7").style.display = "none";
     setTimeout(function () {
         thanks();
-    },1000)
+    },0)
 
 }
 
