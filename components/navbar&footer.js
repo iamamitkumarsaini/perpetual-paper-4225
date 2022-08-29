@@ -14,11 +14,11 @@ return `
 
             <div id="payroll-part-first">
                 <div class="payroll-box" id="box1">
-                <h5>Payroll</h5>
+                <h5><a href="payrollpage.html">Payroll</a></h5>
                 <p>Automatic deductions and filings, direct deposits, W-2s, and 1990s</p>
                 </div>
                 <div class="payroll-box" id="box2">
-                <h5>Employee benefits</h5>
+                <h5><a href="emp_benefits.html">Employee benefits</a></h5>
                 <p>Health benefits, automatic savings, 401(k)s, and more</p>
                 </div>
                 <div class="payroll-box">
@@ -62,7 +62,7 @@ return `
                 <p>Grow your accounting or bookkeeping practice</p>
             </div>
             <div class="accountant-box" id="people-advisory">
-                <h5>People Advisory</h5>
+                <h5><a href="people_Advisory.html">People Advisory</a></h5>
                 <p>Combine financial expertise with people-focused advising</p>
             </div>
             <div class="accountant-box">

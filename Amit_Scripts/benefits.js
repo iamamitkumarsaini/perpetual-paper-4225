@@ -536,4 +536,4 @@ function slideImg (){
     changeDiv.style.animation =  "fadeIn 5s";
 }
 
-setInterval (slideImg,3000)
+setInterval (slideImg,3000);

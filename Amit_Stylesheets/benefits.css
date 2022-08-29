@@ -1316,6 +1316,11 @@ p,a,li,strong{
     text-decoration: none;
 }
 
+.platform_img>p>a:hover{
+    color: #0A8080;
+    text-decoration: underline;
+}
+
 
 #frequntlyQues{
     position: relative;
