@@ -160,6 +160,10 @@ small {
 #empty_password{
     margin-top: 5%;
 }
+#signin:hover{
+    transition: all 200ms ease-in-out;
+    
+}
 #show{
     margin-left: 85%;
     margin-top: -30px;

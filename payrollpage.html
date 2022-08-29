@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payroll page</title>
     <link rel="stylesheet" href="payrollpage.css">
+    <link rel="stylesheet" href="navbar&footer.css">
     <link rel="stylesheet" href="./webfontkit GCentra/stylesheet.css">
     <link rel="stylesheet" href="./Webkit Clearfacebold Fonts/stylesheet.css">
     <script src="https://kit.fontawesome.com/97af42fa79.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- nabar -->
+<div id="navbar"></div>
+
     <!-- upper part -->
     <div id="main_box">
           <div id="text">
@@ -210,10 +214,20 @@
                 <p id="answer4">Your employees can make updates right in their Gusto account. It’s easy to add a dependent, change an address, change a name, and more. <a href="">See a demo</a>.</p>
             </div>
         </div>
+
+        <!-- footer -->
+        <div id="footer"></div>
 </body>
 </html>
 
-<script>
+<script type="module">
+    import{navbar,footer} from './components/navbar&footer.js';
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+    document.getElementById("footer").innerHTML = footer();
+    
+    
     let question1 = document.getElementById("question1");
 
 let question2 = document.getElementById("question2");

@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Gusto</title>
     <link rel="stylesheet" href="whygusto.css">
+    <link rel="stylesheet" href="navbar&footer.css">
+    
     <link rel="stylesheet" href="./webfontkit GCentra/stylesheet.css">
     <link rel="stylesheet" href="./Webkit Clearfacebold Fonts/stylesheet.css">
+    <script src="https://kit.fontawesome.com/bc878c96a1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- navbar -->
+  <div id="navbar"></div>
+
     <!-- upper portion -->
     <div id="upper_box">
         <div id="img1"><img src="https://www.marshmallowchallenge.com/assets/pictures/gusto-1200.webp" alt="image1"></div>
@@ -68,7 +74,7 @@
 
     <!-- Link pages -->
 
-    <div id="payroll">
+    <div id="payroll_shivalika">
         <div id="paybox">
             <div id="paybox1"><p>Full-service payroll</p></div>
             <div id="paybox2"><h1>Pay your employees and <br> contractors with smart <br> technology.</h1></div>
@@ -268,10 +274,146 @@
         <div><h1> <i>Dedicated support, <br> at your service.</i></h1></div>
         <div><p>Questions? With our Premium plan you’ll get your own dedicated <br> customer success manager for expert guidance, data migrations, <br> compliance tips, and more. See Gusto pricing plans to find the right <br> plan for your business.</p></div>
     </div>
-    <div id="end">
+    <!-- <div id="end">
         <div><h1>Ready to try Gusto for <br> yourself?</h1></div>
         <button><a href="signUpPage.html">Create account</a></button>
-    </div>
+    </div> -->
 
+    <!-- footer -->
+
+    <div id="footer"></div>
 </body>
 </html>
+
+<script type="module">
+    import{navbar,footer} from './components/navbar&footer.js';
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+    document.getElementById("footer").innerHTML = footer();
+
+
+    
+    let payroll= document.getElementById("payroll");
+    let accountant = document.getElementById("accountant");
+    let built = document.getElementById("built");
+    let payroll_page = document.getElementById("box1");
+    let employee_benefits_page = document.getElementById("box2");
+    let people_advisory = document.getElementById("people-advisory");
+    
+
+     payroll.addEventListener("mouseenter", divComeDown1);
+     payroll.addEventListener("mouseleave", divComeUP1)
+
+     accountant.addEventListener("mouseenter", divComeDown2);
+     accountant.addEventListener("mouseleave", divComeUP2)
+
+     built.addEventListener("mouseenter", divComeDown3);
+     built.addEventListener("mouseleave", divComeUP3)
+
+     payroll_page.addEventListener("click", payrollPage);
+     
+     employee_benefits_page.addEventListener("click", employeeBenefitsPage);
+
+    //  people_advisory.addEventListener("click", peopleAdvisorypage)
+
+
+
+    
+      function divComeDown1(){
+
+         document.getElementById("payroll-heading").style.color = "rgb(29, 165, 154)"
+         document.getElementById("payroll-heading").style.fontWeight = "600"
+
+         document.getElementById("payroll-icon").style.transform = "rotate(180deg)"
+         document.getElementById("payroll-icon").style.transition= "all 0.2s ease-in-out"
+
+       }
+
+
+     function divComeUP1(){
+
+        document.getElementById("payroll-heading").style.color = "black"
+        document.getElementById("payroll-heading").style.fontWeight = "400"
+
+        document.getElementById("payroll-icon").style.transform = "rotate(0deg)"
+
+      }
+
+     function divComeDown2(){
+
+document.getElementById("accountant-heading").style.color = "rgb(29, 165, 154)"
+document.getElementById("accountant-heading").style.fontWeight = "600"
+
+document.getElementById("accountant-icon").style.transform = "rotate(180deg)"
+document.getElementById("accountant-icon").style.transition= "all 0.2s ease-in-out"
+
+
+
+
+
+}
+
+
+function divComeUP2(){
+
+document.getElementById("accountant-heading").style.color = "black"
+document.getElementById("accountant-heading").style.fontWeight = "400"
+
+document.getElementById("accountant-icon").style.transform = "rotate(0deg)"
+
+
+
+
+}
+
+
+function divComeDown3(){
+
+document.getElementById("built-heading").style.color = "rgb(29, 165, 154)"
+document.getElementById("built-heading").style.fontWeight = "600"
+
+document.getElementById("built-icon").style.transform = "rotate(180deg)"
+document.getElementById("built-icon").style.transition= "all 0.2s ease-in-out"
+
+
+
+
+
+}
+
+
+function divComeUP3(){
+
+document.getElementById("built-heading").style.color = "black"
+document.getElementById("built-heading").style.fontWeight = "400"
+
+document.getElementById("built-icon").style.transform = "rotate(0deg)"
+
+
+
+
+}
+
+
+function payrollPage(){
+window.location.href = "./payrollpage.html"
+}
+
+function employeeBenefitsPage(){
+window.location.href = "./emp_benefits.html"
+}
+
+let peopleAdvisorypage = ()=>{
+    
+    window.location.href = './people_Advisory.html';
+    
+}
+
+people_advisory.addEventListener("click", peopleAdvisorypage)
+
+
+
+
+
+    </script>
