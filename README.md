@@ -7,10 +7,10 @@ Gusto is a website that provides online payroll, benefits, and HR solutions for 
 Gusto is a modern HR and payroll website designed for small businesses. It offers a comprehensive and user-friendly platform for managing employee information, payroll processing, and benefits administration. Gusto streamlines HR tasks and makes them accessible from anywhere, giving business owners peace of mind and freeing up time for growth.
 
 ## Passionate Contributors
-Amit Kumar Saini [[Portfolio](https://iamamitkumarsaini.github.io/)]
-Shivendra Shrivastwa [[Portfolio](https://shivendra0852.github.io/)]
-Kanhaiya tiwari [[Portfolio](https://kanhaiyatiwari.github.io/)]
-Pradeep Singh
+Amit Kumar Saini [[Portfolio](https://iamamitkumarsaini.github.io/)]    
+Shivendra Shrivastwa [[Portfolio](https://shivendra0852.github.io/)]    
+Kanhaiya tiwari [[Portfolio](https://kanhaiyatiwari.github.io/)]    
+Pradeep Singh     
 Shivalika Sharma
 
 
